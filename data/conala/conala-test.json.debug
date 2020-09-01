@@ -1,0 +1,3619 @@
+Example: 0-15080500
+Original Utterance: send a signal `signal.SIGUSR1` to the current process
+Original Snippet: os.kill(os.getpid(), signal.SIGUSR1)
+
+Utterance: send a signal str_0 to the current process
+Snippet: os.kill(os.getpid(), signal.SIGUSR1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 1-3283984
+Original Utterance: decode a hex string '4a4b4c' to UTF-8.
+Original Snippet: bytes.fromhex('4a4b4c').decode('utf-8')
+
+Utterance: decode a hex string str_0 to utf-8 .
+Snippet: bytes.fromhex('str_0').decode('utf-8')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 2-3844801
+Original Utterance: check if all elements in list `myList` are identical
+Original Snippet: all(x == myList[0] for x in myList)
+
+Utterance: check if all elements in list var_0 are identical
+Snippet: all(x == var_0[0] for x in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 3-4302166
+Original Utterance: format number of spaces between strings `Python`, `:` and `Very Good` to be `20`
+Original Snippet: print('%*s : %*s' % (20, 'Python', 20, 'Very Good'))
+
+Utterance: format number of spaces between strings var_0 , str_0 and str_1 to be str_2
+Snippet: print('%*s : %*s' % (20, 'var_0', 20, 'str_1'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 4-7555335
+Original Utterance: None
+Original Snippet: d.decode('cp1251').encode('utf8')
+
+Utterance: how to convert a string from cp-1251 to utf-8 ?
+Snippet: d.decode('cp1251').encode('utf8')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 5-2544710
+Original Utterance: get rid of None values in dictionary `kwargs`
+Original Snippet: res = {k: v for k, v in list(kwargs.items()) if v is not None}
+
+Utterance: get rid of none values in dictionary var_0
+Snippet: res = {k: v for k, v in list(var_0.items()) if v is not None}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 6-2544710
+Original Utterance: get rid of None values in dictionary `kwargs`
+Original Snippet: res = dict((k, v) for k, v in kwargs.items() if v is not None)
+
+Utterance: get rid of none values in dictionary var_0
+Snippet: res = dict((k, v) for k, v in var_0.items() if v is not None)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 7-14971373
+Original Utterance: capture final output of a chain of system commands `ps -ef | grep something | wc -l`
+Original Snippet: subprocess.check_output('ps -ef | grep something | wc -l', shell=True)
+
+Utterance: capture final output of a chain of system commands str_0
+Snippet: subprocess.check_output('str_0', shell=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 8-6726636
+Original Utterance: concatenate a list of strings `['a', 'b', 'c']`
+Original Snippet: """""".join(['a', 'b', 'c'])
+
+Utterance: concatenate a list of strings str_0
+Snippet: """""".join([str_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 9-18079563
+Original Utterance: find intersection data between series `s1` and series `s2`
+Original Snippet: pd.Series(list(set(s1).intersection(set(s2))))
+
+Utterance: find intersection data between series var_0 and series var_1
+Snippet: pd.Series(list(set(var_0).intersection(set(var_1))))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 10-8315209
+Original Utterance: sending http headers to `client`
+Original Snippet: client.send('HTTP/1.0 200 OK\r\n')
+
+Utterance: sending http headers to var_0
+Snippet: var_0.send('HTTP/1.0 200 OK\r\n')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 11-26153795
+Original Utterance: Format a datetime string `when` to extract date only
+Original Snippet: then = datetime.datetime.strptime(when, '%Y-%m-%d').date()
+
+Utterance: format a datetime string var_0 to extract date only
+Snippet: then = datetime.datetime.strptime(var_0, '%Y-%m-%d').date()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 12-172439
+Original Utterance: split a multi-line string `inputString` into separate strings
+Original Snippet: inputString.split('\n')
+
+Utterance: split a multi-line string var_0 into separate strings
+Snippet: var_0.split('\n')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 13-172439
+Original Utterance: Split a multi-line string ` a \n b \r\n c ` by new line character `\n`
+Original Snippet: ' a \n b \r\n c '.split('\n')
+
+Utterance: split a multi-line string str_0 by new line character str_1
+Snippet: ' a \n b \r\n c '.split('str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 14-13954222
+Original Utterance: concatenate elements of list `b` by a colon ":"
+Original Snippet: """:""".join(str(x) for x in b)
+
+Utterance: concatenate elements of list var_0 by a colon str_0
+Snippet: """str_0""".join(str(x) for x in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 15-5123839
+Original Utterance: get the first object from a queryset in django model `Entry`
+Original Snippet: Entry.objects.filter()[:1].get()
+
+Utterance: get the first object from a queryset in django model var_0
+Snippet: var_0.objects.filter()[:1].get()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 16-13567345
+Original Utterance: Calculate sum over all rows of 2D numpy array
+Original Snippet: a.sum(axis=1)
+
+Utterance: calculate sum over all rows of 2d numpy array
+Snippet: a.sum(axis=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 17-29784889
+Original Utterance: enable warnings using action 'always'
+Original Snippet: warnings.simplefilter('always')
+
+Utterance: enable warnings using action str_0
+Snippet: warnings.simplefilter('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 18-13550423
+Original Utterance: concatenate items of list `l` with a space ' '
+Original Snippet: print(' '.join(map(str, l)))
+
+Utterance: concatenate items of list var_0 with a space str_0
+Snippet: print(' '.join(map(str, var_0)))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 19-25651990
+Original Utterance: run script 'hello.py' with argument 'htmlfilename.htm' on terminal using python executable
+Original Snippet: subprocess.call(['python.exe', 'hello.py', 'htmlfilename.htm'])
+
+Utterance: run script str_0 with argument str_1 on terminal using python executable
+Snippet: subprocess.call(['python.exe', 'str_0', 'str_1'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 20-698223
+Original Utterance: None
+Original Snippet: time.strptime('30/03/09 16:31:32.123', '%d/%m/%y %H:%M:%S.%f')
+
+Utterance: how can i parse a time string containing milliseconds in it with python ?
+Snippet: time.strptime('30/03/09 16:31:32.123', '%d/%m/%y %H:%M:%S.%f')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 21-6633523
+Original Utterance: convert a string `my_string` with dot and comma into a float number `my_float`
+Original Snippet: my_float = float(my_string.replace(',', ''))
+
+Utterance: convert a string var_0 with dot and comma into a float number var_1
+Snippet: var_1 = float(var_0.replace(',', ''))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 22-6633523
+Original Utterance: convert a string `123,456.908` with dot and comma into a floating number
+Original Snippet: float('123,456.908'.replace(',', ''))
+
+Utterance: convert a string str_0 with dot and comma into a floating number
+Snippet: float('str_0'.replace(',', ''))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 23-3108285
+Original Utterance: set pythonpath in python script.
+Original Snippet: sys.path.append('/path/to/whatever')
+
+Utterance: set pythonpath in python script .
+Snippet: sys.path.append('/path/to/whatever')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 24-2195340
+Original Utterance: split string 'Words, words, words.' using a regex '(\\W+)'
+Original Snippet: re.split('(\\W+)', 'Words, words, words.')
+
+Utterance: split string str_0 using a regex str_1
+Snippet: re.split('str_1', 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 25-17977584
+Original Utterance: open a file `Output.txt` in append mode
+Original Snippet: file = open('Output.txt', 'a')
+
+Utterance: open a file str_0 in append mode
+Snippet: file = open('str_0', 'a')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 26-22676
+Original Utterance: download a file "http://www.example.com/songs/mp3.mp3" over HTTP and save to "mp3.mp3"
+Original Snippet: urllib.request.urlretrieve('http://www.example.com/songs/mp3.mp3', 'mp3.mp3')
+
+Utterance: download a file str_0 over http and save to str_1
+Snippet: urllib.request.urlretrieve('str_0', 'str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 27-22676
+Original Utterance: download a file `url` over HTTP and save to `file_name`
+Original Snippet: u = urllib.request.urlopen(url)
+f = open(file_name, 'wb')
+meta = u.info()
+file_size = int(meta.getheaders('Content-Length')[0])
+print(('Downloading: %s Bytes: %s' % (file_name, file_size)))
+file_size_dl = 0
+block_sz = 8192
+while True:
+    buffer = u.read(block_sz)
+    if (not buffer):
+        break
+    file_size_dl += len(buffer)
+    f.write(buffer)
+    status = ('%10d  [%3.2f%%]' % (file_size_dl, ((file_size_dl * 100.0) / file_size)))
+    status = (status + (chr(8) * (len(status) + 1)))
+    print(status, end=' ')
+f.close()
+
+Utterance: download a file var_0 over http and save to var_1
+Snippet: u = urllib.request.urlopen(var_0)
+f = open(var_1, 'wb')
+meta = u.info()
+file_size = int(meta.getheaders('Content-Length')[0])
+print('Downloading: %s Bytes: %s' % (var_1, file_size))
+file_size_dl = 0
+block_sz = 8192
+while True:
+    buffer = u.read(block_sz)
+    if not buffer:
+        break
+    file_size_dl += len(buffer)
+    f.write(buffer)
+    status = '%10d  [%3.2f%%]' % (file_size_dl, file_size_dl * 100.0 /
+        file_size)
+    status = status + chr(8) * (len(status) + 1)
+    print(status, end=' ')
+f.close()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 28-22676
+Original Utterance: download a file 'http://www.example.com/' over HTTP
+Original Snippet: response = urllib.request.urlopen('http://www.example.com/')
+html = response.read()
+
+Utterance: download a file str_0 over http
+Snippet: response = urllib.request.urlopen('str_0')
+html = response.read()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 29-22676
+Original Utterance: download a file `url` over HTTP
+Original Snippet: r = requests.get(url)
+
+Utterance: download a file var_0 over http
+Snippet: r = requests.get(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 30-22676
+Original Utterance: download a file `url` over HTTP and save to "10MB"
+Original Snippet: response = requests.get(url, stream=True)
+with open('10MB', 'wb') as handle:
+    for data in tqdm(response.iter_content()):
+        handle.write(data)
+
+Utterance: download a file var_0 over http and save to str_0
+Snippet: response = requests.get(var_0, stream=True)
+with open('str_0', 'wb') as handle:
+    for data in tqdm(response.iter_content()):
+        handle.write(data)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 31-15405636
+Original Utterance: argparse add argument with flag '--version' and version action of '%(prog)s 2.0' to parser `parser`
+Original Snippet: parser.add_argument('--version', action='version', version='%(prog)s 2.0')
+
+Utterance: argparse add argument with flag str_0 and version action of str_1 to parser var_0
+Snippet: var_0.add_argument('str_0', action='version', version='str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 32-17665809
+Original Utterance: remove key 'c' from dictionary `d`
+Original Snippet: {i: d[i] for i in d if i != 'c'}
+
+Utterance: remove key str_0 from dictionary var_0
+Snippet: {i: var_0[i] for i in var_0 if i != 'str_0'}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 33-41861705
+Original Utterance: Create new DataFrame object by merging columns "key" of  dataframes `split_df` and `csv_df` and rename the columns from dataframes `split_df` and `csv_df` with suffix `_left` and `_right` respectively
+Original Snippet: pd.merge(split_df, csv_df, on=['key'], suffixes=('_left', '_right'))
+
+Utterance: create new dataframe object by merging columns str_0 of dataframes var_0 and var_1 and rename the columns from dataframes var_0 and var_1 with suffix var_4 and var_5 respectively
+Snippet: pd.merge(var_2, var_3, on=['str_0'], suffixes=('var_4', 'var_5'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 34-10697757
+Original Utterance: Split a string `s` by space with `4` splits
+Original Snippet: s.split(' ', 4)
+
+Utterance: split a string var_0 by space with str_0 splits
+Snippet: var_0.split(' ', 4)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 35-5404068
+Original Utterance: read keyboard-input
+Original Snippet: input('Enter your input:')
+
+Utterance: read keyboard-input
+Snippet: input('Enter your input:')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 36-16344756
+Original Utterance: enable debug mode on Flask application `app`
+Original Snippet: app.run(debug=True)
+
+Utterance: enable debug mode on flask application var_0
+Snippet: var_0.run(debug=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 37-40133826
+Original Utterance: python save list `mylist` to file object 'save.txt'
+Original Snippet: pickle.dump(mylist, open('save.txt', 'wb'))
+
+Utterance: python save list var_0 to file object str_0
+Snippet: pickle.dump(var_0, open('str_0', 'wb'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 38-4490961
+Original Utterance: Multiply a matrix `P` with a 3d tensor `T` in scipy
+Original Snippet: scipy.tensordot(P, T, axes=[1, 1]).swapaxes(0, 1)
+
+Utterance: multiply a matrix var_0 with a 3d tensor var_1 in scipy
+Snippet: scipy.tensordot(var_0, var_1, axes=[1, 1]).swapaxes(0, 1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 39-2173087
+Original Utterance: Create 3d array of zeroes of size `(3,3,3)`
+Original Snippet: numpy.zeros((3, 3, 3))
+
+Utterance: create 3d array of zeroes of size str_0
+Snippet: numpy.zeros((3, 3, 3))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 40-6266727
+Original Utterance: cut off the last word of a sentence `content`
+Original Snippet: """ """.join(content.split(' ')[:-1])
+
+Utterance: cut off the last word of a sentence var_0
+Snippet: """ """.join(var_0.split(' ')[:-1])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 41-30385151
+Original Utterance: convert scalar `x` to array
+Original Snippet: x = np.asarray(x).reshape(1, -1)[(0), :]
+
+Utterance: convert scalar var_0 to array
+Snippet: var_0 = np.asarray(var_0).reshape(1, -1)[(0), :]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 42-15856127
+Original Utterance: sum all elements of nested list `L`
+Original Snippet: sum(sum(i) if isinstance(i, list) else i for i in L)
+
+Utterance: sum all elements of nested list var_0
+Snippet: sum(sum(i) if isinstance(i, list) else i for i in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 43-1592158
+Original Utterance: convert hex string '470FC614' to a float number
+Original Snippet: struct.unpack('!f', '470FC614'.decode('hex'))[0]
+
+Utterance: convert hex string str_0 to a float number
+Snippet: struct.unpack('!f', 'str_0'.decode('hex'))[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 44-5010536
+Original Utterance: Multiple each value by `2` for all keys in a dictionary `my_dict`
+Original Snippet: my_dict.update((x, y * 2) for x, y in list(my_dict.items()))
+
+Utterance: multiple each value by str_0 for all keys in a dictionary var_0
+Snippet: var_0.update((x, y * 2) for x, y in list(var_0.items()))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 45-13745648
+Original Utterance: running bash script 'sleep.sh'
+Original Snippet: subprocess.call('sleep.sh', shell=True)
+
+Utterance: running bash script str_0
+Snippet: subprocess.call('str_0', shell=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 46-44778
+Original Utterance: Join elements of list `l` with a comma `,`
+Original Snippet: """,""".join(l)
+
+Utterance: join elements of list var_0 with a comma str_0
+Snippet: """str_0""".join(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 47-44778
+Original Utterance: make a comma-separated string from a list `myList`
+Original Snippet: myList = ','.join(map(str, myList))
+
+Utterance: make a comma-separated string from a list var_0
+Snippet: var_0 = ','.join(map(str, var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 48-7286365
+Original Utterance: reverse the list that contains 1 to 10
+Original Snippet: list(reversed(list(range(10))))
+
+Utterance: reverse the list that contains 1 to 10
+Snippet: list(reversed(list(range(10))))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 49-18454570
+Original Utterance: remove substring 'bag,' from a string 'lamp, bag, mirror'
+Original Snippet: print('lamp, bag, mirror'.replace('bag,', ''))
+
+Utterance: remove substring str_0 from a string str_1
+Snippet: print('str_1'.replace('str_0', ''))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 50-4357787
+Original Utterance: Reverse the order of words, delimited by `.`, in string `s`
+Original Snippet: """.""".join(s.split('.')[::-1])
+
+Utterance: reverse the order of words , delimited by str_0 , in string var_0
+Snippet: """str_0""".join(var_0.split('str_0')[::-1])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 51-21787496
+Original Utterance: convert epoch time represented as milliseconds `s` to string using format '%Y-%m-%d %H:%M:%S.%f'
+Original Snippet: datetime.datetime.fromtimestamp(s).strftime('%Y-%m-%d %H:%M:%S.%f')
+
+Utterance: convert epoch time represented as milliseconds var_0 to string using format str_0
+Snippet: datetime.datetime.fromtimestamp(var_0).strftime('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 52-21787496
+Original Utterance: parse milliseconds epoch time '1236472051807' to format '%Y-%m-%d %H:%M:%S'
+Original Snippet: time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime(1236472051807 / 1000.0))
+
+Utterance: parse milliseconds epoch time str_0 to format str_1
+Snippet: time.strftime('str_1', time.gmtime(1236472051807 / 1000.0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 53-20573459
+Original Utterance: get the date 7 days before the current date
+Original Snippet: (datetime.datetime.now() - datetime.timedelta(days=7)).date()
+
+Utterance: get the date 7 days before the current date
+Snippet: (datetime.datetime.now() - datetime.timedelta(days=7)).date()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 54-15352457
+Original Utterance: sum elements at index `column` of each list in list `data`
+Original Snippet: print(sum(row[column] for row in data))
+
+Utterance: sum elements at index var_0 of each list in list var_1
+Snippet: print(sum(row[var_0] for row in var_1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 55-15352457
+Original Utterance: sum columns of a list `array`
+Original Snippet: [sum(row[i] for row in array) for i in range(len(array[0]))]
+
+Utterance: sum columns of a list var_0
+Snippet: [sum(row[i] for row in var_0) for i in range(len(var_0[0]))]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 56-23164058
+Original Utterance: encode binary string 'your string' to base64 code
+Original Snippet: base64.b64encode(bytes('your string', 'utf-8'))
+
+Utterance: encode binary string str_0 to base64 code
+Snippet: base64.b64encode(bytes('str_0', 'utf-8'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 57-11533274
+Original Utterance: combine list of dictionaries `dicts` with the same keys in each list to a single dictionary
+Original Snippet: dict((k, [d[k] for d in dicts]) for k in dicts[0])
+
+Utterance: combine list of dictionaries var_0 with the same keys in each list to a single dictionary
+Snippet: dict((k, [d[k] for d in var_0]) for k in var_0[0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 58-11533274
+Original Utterance: Merge a nested dictionary `dicts` into a flat dictionary by concatenating nested values with the same key `k`
+Original Snippet: {k: [d[k] for d in dicts] for k in dicts[0]}
+
+Utterance: merge a nested dictionary var_0 into a flat dictionary by concatenating nested values with the same key var_1
+Snippet: {var_1: [d[var_1] for d in var_0] for var_1 in var_0[0]}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 59-14026704
+Original Utterance: None
+Original Snippet: request.args['myParam']
+
+Utterance: how do i get the url parameter in a flask view
+Snippet: request.args['myParam']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 60-11236006
+Original Utterance: identify duplicate values in list `mylist`
+Original Snippet: [k for k, v in list(Counter(mylist).items()) if v > 1]
+
+Utterance: identify duplicate values in list var_0
+Snippet: [k for k, v in list(Counter(var_0).items()) if v > 1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 61-2354166
+Original Utterance: Insert directory 'apps' into directory `__file__`
+Original Snippet: sys.path.insert(1, os.path.join(os.path.dirname(__file__), 'apps'))
+
+Utterance: insert directory str_0 into directory var_0
+Snippet: sys.path.insert(1, os.path.join(os.path.dirname(var_0), 'str_0'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 62-2354166
+Original Utterance: modify sys.path for python module `subdir`
+Original Snippet: sys.path.append(os.path.join(os.path.dirname(__file__), 'subdir'))
+
+Utterance: modify sys.path for python module var_0
+Snippet: sys.path.append(os.path.join(os.path.dirname(__file__), 'var_0'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 63-20211942
+Original Utterance: Insert a 'None' value into a SQLite3 table.
+Original Snippet: db.execute("INSERT INTO present VALUES('test2', ?, 10)", (None,))
+
+Utterance: insert a str_0 value into a sqlite3 table .
+Snippet: db.execute("INSERT INTO present VALUES('test2', ?, 10)", (None,))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 64-406121
+Original Utterance: flatten list `list_of_menuitems`
+Original Snippet: [image for menuitem in list_of_menuitems for image in menuitem]
+
+Utterance: flatten list var_0
+Snippet: [image for menuitem in var_0 for image in menuitem]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 65-4741537
+Original Utterance: append elements of a set `b` to a list `a`
+Original Snippet: a.extend(b)
+
+Utterance: append elements of a set var_0 to a list var_1
+Snippet: var_1.extend(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 66-4741537
+Original Utterance: None
+Original Snippet: a.extend(list(b))
+
+Utterance: append elements of a set to a list in python
+Snippet: a.extend(list(b))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 67-31247198
+Original Utterance: write the data of dataframe `df` into text file `np.txt`
+Original Snippet: np.savetxt('c:\\data\\np.txt', df.values, fmt='%d')
+
+Utterance: write the data of dataframe var_0 into text file str_0
+Snippet: np.savetxt('c:\\data\\np.txt', var_0.values, fmt='%d')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 68-31247198
+Original Utterance: write content of DataFrame `df` into text file 'c:\\data\\pandas.txt'
+Original Snippet: df.to_csv('c:\\data\\pandas.txt', header=None, index=None, sep=' ', mode='a')
+
+Utterance: write content of dataframe var_0 into text file str_0
+Snippet: var_0.to_csv('str_0', header=None, index=None, sep=' ', mode='a')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 69-15851568
+Original Utterance: Split a string `x` by last occurrence of character `-`
+Original Snippet: print(x.rpartition('-')[0])
+
+Utterance: split a string var_0 by last occurrence of character str_0
+Snippet: print(var_0.rpartition('str_0')[0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 70-15851568
+Original Utterance: get the last part of a string before the character '-'
+Original Snippet: print(x.rsplit('-', 1)[0])
+
+Utterance: get the last part of a string before the character str_0
+Snippet: print(x.rsplit('str_0', 1)[0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 71-17438096
+Original Utterance: upload file using FTP
+Original Snippet: ftp.storlines('STOR ' + filename, open(filename, 'r'))
+
+Utterance: upload file using ftp
+Snippet: ftp.storlines('STOR ' + filename, open(filename, 'r'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 72-15049182
+Original Utterance: add one to the hidden web element with id 'XYZ' with selenium python script
+Original Snippet: browser.execute_script("document.getElementById('XYZ').value+='1'")
+
+Utterance: add one to the hidden web element with id str_0 with selenium python script
+Snippet: browser.execute_script("document.getElementById('XYZ').value+='1'")
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 73-28742436
+Original Utterance: create array containing the maximum value of respective elements of array `[2, 3, 4]` and array `[1, 5, 2]`
+Original Snippet: np.maximum([2, 3, 4], [1, 5, 2])
+
+Utterance: create array containing the maximum value of respective elements of array str_0 and array str_1
+Snippet: np.maximum([str_0], [str_1])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 74-34280147
+Original Utterance: print a list `l` and move first 3 elements to the end of the list
+Original Snippet: print(l[3:] + l[:3])
+
+Utterance: print a list var_0 and move first 3 elements to the end of the list
+Snippet: print(var_0[3:] + var_0[:3])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 75-11801309
+Original Utterance: loop over files in directory '.'
+Original Snippet: for fn in os.listdir('.'):
+    if os.path.isfile(fn):
+        pass
+
+Utterance: loop over files in directory str_0
+Snippet: for fn in os.listdir('str_0'):
+    if os.path.isfile(fn):
+        pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 76-11801309
+Original Utterance: loop over files in directory `source`
+Original Snippet: for (root, dirs, filenames) in os.walk(source):
+    for f in filenames:
+        pass
+
+Utterance: loop over files in directory var_0
+Snippet: for root, dirs, filenames in os.walk(var_0):
+    for f in filenames:
+        pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 77-4172131
+Original Utterance: create a random list of integers
+Original Snippet: [int(1000 * random.random()) for i in range(10000)]
+
+Utterance: create a random list of integers
+Snippet: [int(1000 * random.random()) for i in range(10000)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 78-6677332
+Original Utterance: None
+Original Snippet: datetime.datetime.now().strftime('%H:%M:%S.%f')
+
+Utterance: using % f with strftime ( ) in python to get microseconds
+Snippet: datetime.datetime.now().strftime('%H:%M:%S.%f')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 79-852055
+Original Utterance: Google App Engine execute GQL query 'SELECT * FROM Schedule WHERE station = $1' with parameter `foo.key()`
+Original Snippet: db.GqlQuery('SELECT * FROM Schedule WHERE station = $1', foo.key())
+
+Utterance: google app engine execute gql query str_0 with parameter str_1
+Snippet: db.GqlQuery('str_0', foo.key())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 80-15325182
+Original Utterance: filter rows in pandas starting with alphabet 'f' using regular expression.
+Original Snippet: df.b.str.contains('^f')
+
+Utterance: filter rows in pandas starting with alphabet str_0 using regular expression .
+Snippet: df.b.str.contains('^f')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 81-583557
+Original Utterance: print a 2 dimensional list `tab` as a table with delimiters
+Original Snippet: print('\n'.join('\t'.join(str(col) for col in row) for row in tab))
+
+Utterance: print a 2 dimensional list var_0 as a table with delimiters
+Snippet: print('\n'.join('\t'.join(str(col) for col in row) for row in var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 82-38535931
+Original Utterance: pandas: delete rows in dataframe `df` based on multiple columns values
+Original Snippet: df.set_index(list('BC')).drop(tuples, errors='ignore').reset_index()
+
+Utterance: pandas : delete rows in dataframe var_0 based on multiple columns values
+Snippet: var_0.set_index(list('BC')).drop(tuples, errors='ignore').reset_index()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 83-13945749
+Original Utterance: format the variables `self.goals` and `self.penalties` using string formatting
+Original Snippet: """({:d} goals, ${:d})""".format(self.goals, self.penalties)
+
+Utterance: format the variables str_0 and str_1 using string formatting
+Snippet: """({:d} goals, ${:d})""".format(self.goals, self.penalties)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 84-13945749
+Original Utterance: format string "({} goals, ${})" with variables `goals` and `penalties`
+Original Snippet: """({} goals, ${})""".format(self.goals, self.penalties)
+
+Utterance: format string str_0 with variables var_0 and var_1
+Snippet: """str_0""".format(self.var_0, self.var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 85-13945749
+Original Utterance: format string "({0.goals} goals, ${0.penalties})"
+Original Snippet: """({0.goals} goals, ${0.penalties})""".format(self)
+
+Utterance: format string str_0
+Snippet: """str_0""".format(self)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 86-18524642
+Original Utterance: convert list of lists `L` to list of integers
+Original Snippet: [int(''.join(str(d) for d in x)) for x in L]
+
+Utterance: convert list of lists var_0 to list of integers
+Snippet: [int(''.join(str(d) for d in x)) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 87-18524642
+Original Utterance: combine elements of each list in list `L` into digits of a single integer
+Original Snippet: [''.join(str(d) for d in x) for x in L]
+
+Utterance: combine elements of each list in list var_0 into digits of a single integer
+Snippet: [''.join(str(d) for d in x) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 88-18524642
+Original Utterance: convert a list of lists `L` to list of integers
+Original Snippet: L = [int(''.join([str(y) for y in x])) for x in L]
+
+Utterance: convert a list of lists var_0 to list of integers
+Snippet: var_0 = [int(''.join([str(y) for y in x])) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 89-7138686
+Original Utterance: write the elements of list `lines` concatenated by special character '\n' to file `myfile`
+Original Snippet: myfile.write('\n'.join(lines))
+
+Utterance: write the elements of list var_0 concatenated by special character str_0 to file var_1
+Snippet: var_1.write('str_0'.join(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 90-1866343
+Original Utterance: removing an element from a list based on a predicate 'X' or 'N'
+Original Snippet: [x for x in ['AAT', 'XAC', 'ANT', 'TTA'] if 'X' not in x and 'N' not in x]
+
+Utterance: removing an element from a list based on a predicate str_0 or str_1
+Snippet: [x for x in ['AAT', 'XAC', 'ANT', 'TTA'] if 'str_0' not in x and 'str_1' not in
+    x]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 91-17238587
+Original Utterance: Remove duplicate words from a string `text` using regex
+Original Snippet: text = re.sub('\\b(\\w+)( \\1\\b)+', '\\1', text)
+
+Utterance: remove duplicate words from a string var_0 using regex
+Snippet: var_0 = re.sub('\\b(\\w+)( \\1\\b)+', '\\1', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 92-26053849
+Original Utterance: count non zero values in each column in pandas data frame
+Original Snippet: df.astype(bool).sum(axis=1)
+
+Utterance: count non zero values in each column in pandas data frame
+Snippet: df.astype(bool).sum(axis=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 93-15534223
+Original Utterance: search for string that matches regular expression pattern '(?<!Distillr)\\\\AcroTray\\.exe' in string 'C:\\SomeDir\\AcroTray.exe'
+Original Snippet: re.search('(?<!Distillr)\\\\AcroTray\\.exe', 'C:\\SomeDir\\AcroTray.exe')
+
+Utterance: search for string that matches regular expression pattern str_0 in string str_1
+Snippet: re.search('str_0', 'str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 94-5453026
+Original Utterance: split string 'QH QD JC KD JS' into a list on white spaces
+Original Snippet: """QH QD JC KD JS""".split()
+
+Utterance: split string str_0 into a list on white spaces
+Snippet: """str_0""".split()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 95-18168684
+Original Utterance: search for occurrences of regex pattern '>.*<' in xml string `line`
+Original Snippet: print(re.search('>.*<', line).group(0))
+
+Utterance: search for occurrences of regex pattern str_0 in xml string var_0
+Snippet: print(re.search('str_0', var_0).group(0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 96-4914277
+Original Utterance: erase all the contents of a file `filename`
+Original Snippet: open(filename, 'w').close()
+
+Utterance: erase all the contents of a file var_0
+Snippet: open(var_0, 'w').close()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 97-19068269
+Original Utterance: convert a string into datetime using the format '%Y-%m-%d %H:%M:%S.%f'
+Original Snippet: datetime.datetime.strptime(string_date, '%Y-%m-%d %H:%M:%S.%f')
+
+Utterance: convert a string into datetime using the format str_0
+Snippet: datetime.datetime.strptime(string_date, 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 98-20683167
+Original Utterance: find the index of a list with the first element equal to '332' within the list of lists `thelist`
+Original Snippet: [index for index, item in enumerate(thelist) if item[0] == '332']
+
+Utterance: find the index of a list with the first element equal to str_0 within the list of lists var_0
+Snippet: [index for index, item in enumerate(var_0) if item[0] == 'str_0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 99-30693804
+Original Utterance: lower a string `text` and remove non-alphanumeric characters aside from space
+Original Snippet: re.sub('[^\\sa-zA-Z0-9]', '', text).lower().strip()
+
+Utterance: lower a string var_0 and remove non-alphanumeric characters aside from space
+Snippet: re.sub('[^\\sa-zA-Z0-9]', '', var_0).lower().strip()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 100-30693804
+Original Utterance: remove all non-alphanumeric characters except space from a string `text` and lower it
+Original Snippet: re.sub('(?!\\s)[\\W_]', '', text).lower().strip()
+
+Utterance: remove all non-alphanumeric characters except space from a string var_0 and lower it
+Snippet: re.sub('(?!\\s)[\\W_]', '', var_0).lower().strip()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 101-17138464
+Original Utterance: subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'.
+Original Snippet: plt.plot(x, y, label='H\u2082O')
+
+Utterance: subscript text str_0 with str_1 as subscripted in matplotlib labels for arrays str_2 and str_3 .
+Snippet: plt.plot(str_2, str_3, label='H₂O')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 102-17138464
+Original Utterance: subscript text 'H20' with '2' as subscripted in matplotlib labels for arrays 'x' and 'y'.
+Original Snippet: plt.plot(x, y, label='$H_2O$')
+
+Utterance: subscript text str_0 with str_1 as subscripted in matplotlib labels for arrays str_2 and str_3 .
+Snippet: plt.plot(str_2, str_3, label='$H_2O$')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 103-9138112
+Original Utterance: loop over a list `mylist` if sublists length equals 3
+Original Snippet: [x for x in mylist if len(x) == 3]
+
+Utterance: loop over a list var_0 if sublists length equals 3
+Snippet: [x for x in var_0 if len(x) == 3]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 104-1807026
+Original Utterance: initialize a list `lst` of 100 objects Object()
+Original Snippet: lst = [Object() for _ in range(100)]
+
+Utterance: initialize a list var_0 of 100 objects object ( )
+Snippet: var_0 = [Object() for _ in range(100)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 105-1807026
+Original Utterance: create list `lst` containing 100 instances of object `Object`
+Original Snippet: lst = [Object() for i in range(100)]
+
+Utterance: create list var_0 containing 100 instances of object var_1
+Snippet: var_0 = [var_1() for i in range(100)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 106-19664253
+Original Utterance: get the content of child tag with`href` attribute whose parent has css `someclass`
+Original Snippet: self.driver.find_element_by_css_selector('.someclass a').get_attribute('href')
+
+Utterance: get the content of child tag withvar_0 attribute whose parent has css var_1
+Snippet: self.driver.find_element_by_css_selector('.someclass a').get_attribute('var_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 107-13793321
+Original Utterance: joining data from dataframe `df1` with data from dataframe `df2` based on matching values of column 'Date_Time' in both dataframes
+Original Snippet: df1.merge(df2, on='Date_Time')
+
+Utterance: joining data from dataframe var_0 with data from dataframe var_1 based on matching values of column str_0 in both dataframes
+Snippet: var_0.merge(var_1, on='str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 108-3367288
+Original Utterance: use `%s` operator to print variable values `str1` inside a string
+Original Snippet: 'first string is: %s, second one is: %s' % (str1, 'geo.tif')
+
+Utterance: use str_0 operator to print variable values var_0 inside a string
+Snippet: 'first string is: %s, second one is: %s' % (var_0, 'geo.tif')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 109-3475251
+Original Utterance: None
+Original Snippet: [x.strip() for x in '2.MATCHES $$TEXT$$ STRING'.split('$$TEXT$$')]
+
+Utterance: split a string by a delimiter in python
+Snippet: [x.strip() for x in '2.MATCHES $$TEXT$$ STRING'.split('$$TEXT$$')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 110-273192
+Original Utterance: check if directory `directory ` exists and create it if necessary
+Original Snippet: if (not os.path.exists(directory)):
+    os.makedirs(directory)
+
+Utterance: check if directory str_0 exists and create it if necessary
+Snippet: if not os.path.exists(str_0):
+    os.makedirs(str_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 111-273192
+Original Utterance: check if a directory `path` exists and create it if necessary
+Original Snippet: try:
+    os.makedirs(path)
+except OSError:
+    if (not os.path.isdir(path)):
+        raise
+
+Utterance: check if a directory var_0 exists and create it if necessary
+Snippet: try:
+    os.makedirs(var_0)
+except OSError:
+    if not os.var_0.isdir(var_0):
+        raise
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 112-273192
+Original Utterance: check if a directory `path` exists and create it if necessary
+Original Snippet: distutils.dir_util.mkpath(path)
+
+Utterance: check if a directory var_0 exists and create it if necessary
+Snippet: distutils.dir_util.mkpath(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 113-273192
+Original Utterance: check if a directory `path` exists and create it if necessary
+Original Snippet: try:
+    os.makedirs(path)
+except OSError as exception:
+    if (exception.errno != errno.EEXIST):
+        raise
+
+Utterance: check if a directory var_0 exists and create it if necessary
+Snippet: try:
+    os.makedirs(var_0)
+except OSError as exception:
+    if exception.errno != errno.EEXIST:
+        raise
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 114-18785032
+Original Utterance: Replace a separate word 'H3' by 'H1' in a string 'text'
+Original Snippet: re.sub('\\bH3\\b', 'H1', text)
+
+Utterance: replace a separate word str_0 by str_1 in a string str_2
+Snippet: re.sub('\\bH3\\b', 'str_1', str_2)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 115-1450897
+Original Utterance: substitute ASCII letters in string 'aas30dsa20' with empty string ''
+Original Snippet: re.sub('\\D', '', 'aas30dsa20')
+
+Utterance: substitute ascii letters in string str_0 with empty string str_1
+Snippet: re.sub('\\D', 'str_1', 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 116-1450897
+Original Utterance: get digits only from a string `aas30dsa20` using lambda function
+Original Snippet: """""".join([x for x in 'aas30dsa20' if x.isdigit()])
+
+Utterance: get digits only from a string var_0 using lambda function
+Snippet: """""".join([x for x in 'var_0' if x.isdigit()])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 117-14435268
+Original Utterance: access a tag called "name" in beautifulsoup `soup`
+Original Snippet: print(soup.find('name').string)
+
+Utterance: access a tag called str_0 in beautifulsoup var_0
+Snippet: print(var_0.find('str_0').string)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 118-4928274
+Original Utterance: get a dictionary `records` of key-value pairs in PyMongo cursor `cursor`
+Original Snippet: records = dict((record['_id'], record) for record in cursor)
+
+Utterance: get a dictionary var_0 of key-value pairs in pymongo cursor var_1
+Snippet: var_0 = dict((record['_id'], record) for record in var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 119-20180210
+Original Utterance: Create new matrix object  by concatenating data from matrix A and matrix B
+Original Snippet: np.concatenate((A, B))
+
+Utterance: create new matrix object by concatenating data from matrix a and matrix b
+Snippet: np.concatenate((A, B))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 120-20180210
+Original Utterance: concat two matrices `A` and `B` in numpy
+Original Snippet: np.vstack((A, B))
+
+Utterance: concat two matrices var_0 and var_1 in numpy
+Snippet: np.vstack((var_0, var_1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 121-2011048
+Original Utterance: Get the characters count in a file `filepath`
+Original Snippet: os.stat(filepath).st_size
+
+Utterance: get the characters count in a file var_0
+Snippet: os.stat(var_0).st_size
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 122-2600191
+Original Utterance: count the occurrences of item "a" in list `l`
+Original Snippet: l.count('a')
+
+Utterance: count the occurrences of item str_0 in list var_0
+Snippet: var_0.count('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 123-2600191
+Original Utterance: count the occurrences of items in list `l`
+Original Snippet: Counter(l)
+
+Utterance: count the occurrences of items in list var_0
+Snippet: Counter(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 124-2600191
+Original Utterance: count the occurrences of items in list `l`
+Original Snippet: [[x, l.count(x)] for x in set(l)]
+
+Utterance: count the occurrences of items in list var_0
+Snippet: [[x, var_0.count(x)] for x in set(var_0)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 125-2600191
+Original Utterance: count the occurrences of items in list `l`
+Original Snippet: dict(((x, l.count(x)) for x in set(l)))
+
+Utterance: count the occurrences of items in list var_0
+Snippet: dict((x, var_0.count(x)) for x in set(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 126-2600191
+Original Utterance: count the occurrences of item "b" in list `l`
+Original Snippet: l.count('b')
+
+Utterance: count the occurrences of item str_0 in list var_0
+Snippet: var_0.count('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 127-12842997
+Original Utterance: copy file `srcfile` to directory `dstdir`
+Original Snippet: shutil.copy(srcfile, dstdir)
+
+Utterance: copy file var_0 to directory var_1
+Snippet: shutil.copy(var_0, var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 128-1555968
+Original Utterance: find the key associated with the largest value in dictionary `x` whilst key is non-zero value
+Original Snippet: max(k for k, v in x.items() if v != 0)
+
+Utterance: find the key associated with the largest value in dictionary var_0 whilst key is non-zero value
+Snippet: max(k for k, v in var_0.items() if v != 0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 129-1555968
+Original Utterance: get the largest key whose not associated with value of 0 in dictionary `x`
+Original Snippet: (k for k, v in x.items() if v != 0)
+
+Utterance: get the largest key whose not associated with value of 0 in dictionary var_0
+Snippet: (k for k, v in var_0.items() if v != 0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 130-1555968
+Original Utterance: get the largest key in a dictionary `x` with non-zero value
+Original Snippet: max(k for k, v in x.items() if v != 0)
+
+Utterance: get the largest key in a dictionary var_0 with non-zero value
+Snippet: max(k for k, v in var_0.items() if v != 0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 131-17021863
+Original Utterance: Put the curser at beginning of the file
+Original Snippet: file.seek(0)
+
+Utterance: put the curser at beginning of the file
+Snippet: file.seek(0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 132-38152389
+Original Utterance: combine values from column 'b' and column 'a' of dataframe `df`  into column 'c' of datafram `df`
+Original Snippet: df['c'] = np.where(df['a'].isnull, df['b'], df['a'])
+
+Utterance: combine values from column str_0 and column str_1 of dataframe var_0 into column str_2 of datafram var_0
+Snippet: var_1['str_2'] = np.where(var_1['str_1'].isnull, var_1['str_0'], var_1['str_1']
+    )
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 133-4175686
+Original Utterance: remove key 'ele' from dictionary `d`
+Original Snippet: del d['ele']
+
+Utterance: remove key str_0 from dictionary var_0
+Snippet: del var_0['str_0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 134-5871168
+Original Utterance: Update datetime field in `MyModel` to be the existing `timestamp` plus 100 years
+Original Snippet: MyModel.objects.update(timestamp=F('timestamp') + timedelta(days=36524.25))
+
+Utterance: update datetime field in var_0 to be the existing var_1 plus 100 years
+Snippet: var_0.objects.update(var_1=F('var_1') + timedelta(days=36524.25))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 135-11574195
+Original Utterance: merge list `['it']` and list `['was']` and list `['annoying']` into one list
+Original Snippet: ['it'] + ['was'] + ['annoying']
+
+Utterance: merge list str_0 and list str_1 and list str_2 into one list
+Snippet: [str_0] + [str_1] + [str_2]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 136-587647
+Original Utterance: increment a value with leading zeroes in a number `x`
+Original Snippet: str(int(x) + 1).zfill(len(x))
+
+Utterance: increment a value with leading zeroes in a number var_0
+Snippet: str(int(var_0) + 1).zfill(len(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 137-17315881
+Original Utterance: check if a pandas dataframe `df`'s index is sorted
+Original Snippet: all(df.index[:-1] <= df.index[1:])
+
+Utterance: check if a pandas dataframe var_0 's index is sorted
+Snippet: all(var_0.index[:-1] <= var_0.index[1:])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 138-16296643
+Original Utterance: Convert tuple `t` to list
+Original Snippet: list(t)
+
+Utterance: convert tuple var_0 to list
+Snippet: list(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 139-16296643
+Original Utterance: Convert list `t` to tuple
+Original Snippet: tuple(l)
+
+Utterance: convert list var_0 to tuple
+Snippet: tuple(l)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 140-16296643
+Original Utterance: Convert tuple `level1` to list
+Original Snippet: level1 = map(list, level1)
+
+Utterance: convert tuple var_0 to list
+Snippet: var_0 = map(list, var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 141-3880399
+Original Utterance: send the output of pprint object `dataobject` to file `logFile`
+Original Snippet: pprint.pprint(dataobject, logFile)
+
+Utterance: send the output of pprint object var_0 to file var_1
+Snippet: pprint.pprint(var_0, var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 142-21800169
+Original Utterance: get index of rows in column 'BoolCol'
+Original Snippet: df.loc[df['BoolCol']]
+
+Utterance: get index of rows in column str_0
+Snippet: df.loc[df['str_0']]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 143-21800169
+Original Utterance: Create a list containing the indexes of rows where the value of column 'BoolCol' in dataframe `df` are equal to True
+Original Snippet: df.iloc[np.flatnonzero(df['BoolCol'])]
+
+Utterance: create a list containing the indexes of rows where the value of column str_0 in dataframe var_0 are equal to true
+Snippet: var_0.iloc[np.flatnonzero(var_0['str_0'])]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 144-21800169
+Original Utterance: get list of indexes of rows where column 'BoolCol' values match True
+Original Snippet: df[df['BoolCol'] == True].index.tolist()
+
+Utterance: get list of indexes of rows where column str_0 values match true
+Snippet: df[df['str_0'] == True].index.tolist()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 145-21800169
+Original Utterance: get index of rows in dataframe `df` which column 'BoolCol' matches value True
+Original Snippet: df[df['BoolCol']].index.tolist()
+
+Utterance: get index of rows in dataframe var_0 which column str_0 matches value true
+Snippet: var_0[var_0['str_0']].index.tolist()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 146-299446
+Original Utterance: change working directory to the directory `owd`
+Original Snippet: os.chdir(owd)
+
+Utterance: change working directory to the directory var_0
+Snippet: os.chdir(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 147-14695134
+Original Utterance: insert data from a string `testfield` to sqlite db `c`
+Original Snippet: c.execute("INSERT INTO test VALUES (?, 'bar')", (testfield,))
+
+Utterance: insert data from a string var_0 to sqlite db var_1
+Snippet: var_1.execute("INSERT INTO test VALUES (?, 'bar')", (var_0,))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 148-24242433
+Original Utterance: decode string "\\x89\\n" into a normal string
+Original Snippet: """\\x89\\n""".decode('string_escape')
+
+Utterance: decode string str_0 into a normal string
+Snippet: """str_0""".decode('string_escape')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 149-24242433
+Original Utterance: convert a raw string `raw_string` into a normal string
+Original Snippet: raw_string.decode('string_escape')
+
+Utterance: convert a raw string var_0 into a normal string
+Snippet: var_0.decode('string_escape')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 150-24242433
+Original Utterance: convert a raw string `raw_byte_string` into a normal string
+Original Snippet: raw_byte_string.decode('unicode_escape')
+
+Utterance: convert a raw string var_0 into a normal string
+Snippet: var_0.decode('unicode_escape')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 151-22882922
+Original Utterance: split a string `s` with into all strings of repeated characters
+Original Snippet: [m.group(0) for m in re.finditer('(\\d)\\1*', s)]
+
+Utterance: split a string var_0 with into all strings of repeated characters
+Snippet: [m.group(0) for m in re.finditer('(\\d)\\1*', var_0)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 152-4143502
+Original Utterance: scatter a plot with x, y position of `np.random.randn(100)` and face color equal to none
+Original Snippet: plt.scatter(np.random.randn(100), np.random.randn(100), facecolors='none')
+
+Utterance: scatter a plot with x , y position of str_0 and face color equal to none
+Snippet: plt.scatter(np.random.randn(100), np.random.randn(100), facecolors='none')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 153-4143502
+Original Utterance: do a scatter plot with empty circles
+Original Snippet: plt.plot(np.random.randn(100), np.random.randn(100), 'o', mfc='none')
+
+Utterance: do a scatter plot with empty circles
+Snippet: plt.plot(np.random.randn(100), np.random.randn(100), 'o', mfc='none')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 154-32063985
+Original Utterance: remove a div with a id `main-content` using beautifulsoup
+Original Snippet: soup.find('div', id='main-content').decompose()
+
+Utterance: remove a div with a id str_0 using beautifulsoup
+Snippet: soup.find('div', id='str_0').decompose()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 155-27975069
+Original Utterance: filter rows containing key word `ball` in column `ids`
+Original Snippet: df[df['ids'].str.contains('ball')]
+
+Utterance: filter rows containing key word var_0 in column var_1
+Snippet: df[df['var_1'].str.contains('var_0')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 156-20461165
+Original Utterance: convert index at level 0 into a column in dataframe `df`
+Original Snippet: df.reset_index(level=0, inplace=True)
+
+Utterance: convert index at level 0 into a column in dataframe var_0
+Snippet: var_0.reset_index(level=0, inplace=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 157-20461165
+Original Utterance: Add indexes in a data frame `df` to a column `index1`
+Original Snippet: df['index1'] = df.index
+
+Utterance: add indexes in a data frame var_0 to a column var_1
+Snippet: var_0['var_1'] = var_0.index
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 158-20461165
+Original Utterance: convert pandas index in a dataframe to columns
+Original Snippet: df.reset_index(level=['tick', 'obs'])
+
+Utterance: convert pandas index in a dataframe to columns
+Snippet: df.reset_index(level=['tick', 'obs'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 159-4685571
+Original Utterance: Get reverse of list items from list 'b' using extended slicing
+Original Snippet: [x[::-1] for x in b]
+
+Utterance: get reverse of list items from list str_0 using extended slicing
+Snippet: [x[::-1] for x in str_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 160-17960441
+Original Utterance: join each element in array `a` with element at the same index in array `b` as a tuple
+Original Snippet: np.array([zip(x, y) for x, y in zip(a, b)])
+
+Utterance: join each element in array var_0 with element at the same index in array var_1 as a tuple
+Snippet: np.array([zip(x, y) for x, y in zip(var_0, var_1)])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 161-17960441
+Original Utterance: zip two 2-d arrays `a` and `b`
+Original Snippet: np.array(zip(a.ravel(), b.ravel()), dtype='i4,i4').reshape(a.shape)
+
+Utterance: zip two 2-d arrays var_0 and var_1
+Snippet: np.array(zip(var_0.ravel(), var_1.ravel()), dtype='i4,i4').reshape(var_0.shape)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 162-438684
+Original Utterance: convert list `list_of_ints` into a comma separated string
+Original Snippet: """,""".join([str(i) for i in list_of_ints])
+
+Utterance: convert list var_0 into a comma separated string
+Snippet: """,""".join([str(i) for i in var_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 163-8519922
+Original Utterance: Send a post request with raw data `DATA` and basic authentication with `username` and `password`
+Original Snippet: requests.post(url, data=DATA, headers=HEADERS_DICT, auth=(username, password))
+
+Utterance: send a post request with raw data var_0 and basic authentication with var_1 and var_2
+Snippet: requests.post(url, data=var_0, headers=HEADERS_DICT, auth=(var_1, var_2))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 164-26443308
+Original Utterance: Find last occurrence of character '}' in string "abcd}def}"
+Original Snippet: 'abcd}def}'.rfind('}')
+
+Utterance: find last occurrence of character str_0 in string str_1
+Snippet: """str_1""".rfind('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 165-22365172
+Original Utterance: Iterate ove list `[1, 2, 3]` using list comprehension
+Original Snippet: print([item for item in [1, 2, 3]])
+
+Utterance: iterate ove list str_0 using list comprehension
+Snippet: print([item for item in [str_0]])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 166-12300912
+Original Utterance: extract all the values with keys 'x' and 'y' from a list of dictionaries `d` to list of tuples
+Original Snippet: [(x['x'], x['y']) for x in d]
+
+Utterance: extract all the values with keys str_0 and str_1 from a list of dictionaries var_0 to list of tuples
+Snippet: [(str_0['str_0'], str_0['str_1']) for str_0 in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 167-678236
+Original Utterance: get the filename without the extension from file 'hemanth.txt'
+Original Snippet: print(os.path.splitext(os.path.basename('hemanth.txt'))[0])
+
+Utterance: get the filename without the extension from file str_0
+Snippet: print(os.path.splitext(os.path.basename('str_0'))[0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 168-2597166
+Original Utterance: create a dictionary by adding each two adjacent elements in tuple `x` as key/value pair to it
+Original Snippet: dict(x[i:i + 2] for i in range(0, len(x), 2))
+
+Utterance: create a dictionary by adding each two adjacent elements in tuple var_0 as key/value pair to it
+Snippet: dict(var_0[i:i + 2] for i in range(0, len(var_0), 2))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 169-7895449
+Original Utterance: create a list containing flattened list `[['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']]`
+Original Snippet: values = sum([['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']], [])
+
+Utterance: create a list containing flattened list str_0
+Snippet: values = sum([str_0], [])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 170-31617845
+Original Utterance: select rows in a dataframe `df` column 'closing_price' between two values 99 and 101
+Original Snippet: df = df[(df['closing_price'] >= 99) & (df['closing_price'] <= 101)]
+
+Utterance: select rows in a dataframe var_0 column str_0 between two values 99 and 101
+Snippet: var_0 = var_0[(var_0['str_0'] >= 99) & (var_0['str_0'] <= 101)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 171-25698710
+Original Utterance: replace all occurences of newlines `\n` with `<br>` in dataframe `df`
+Original Snippet: df.replace({'\n': '<br>'}, regex=True)
+
+Utterance: replace all occurences of newlines str_0 with str_1 in dataframe var_0
+Snippet: var_0.replace({'str_0': 'str_1'}, regex=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 172-25698710
+Original Utterance: replace all occurrences of a string `\n` by string `<br>` in a pandas data frame `df`
+Original Snippet: df.replace({'\n': '<br>'}, regex=True)
+
+Utterance: replace all occurrences of a string str_0 by string str_1 in a pandas data frame var_0
+Snippet: var_0.replace({'str_0': 'str_1'}, regex=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 173-41923858
+Original Utterance: create a list containing each two adjacent letters in string `word` as its elements
+Original Snippet: [(x + y) for x, y in zip(word, word[1:])]
+
+Utterance: create a list containing each two adjacent letters in string var_0 as its elements
+Snippet: [(x + y) for x, y in zip(var_0, var_0[1:])]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 174-41923858
+Original Utterance: Get a list of pairs from a string `word` using lambda function
+Original Snippet: list(map(lambda x, y: x + y, word[:-1], word[1:]))
+
+Utterance: get a list of pairs from a string var_0 using lambda function
+Snippet: list(map(lambda x, y: x + y, var_0[:-1], var_0[1:]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 175-9760588
+Original Utterance: extract a url from a string `myString`
+Original Snippet: print(re.findall('(https?://[^\\s]+)', myString))
+
+Utterance: extract a url from a string var_0
+Snippet: print(re.findall('(https?://[^\\s]+)', var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 176-9760588
+Original Utterance: extract a url from a string `myString`
+Original Snippet: print(re.search('(?P<url>https?://[^\\s]+)', myString).group('url'))
+
+Utterance: extract a url from a string var_0
+Snippet: print(re.search('(?P<url>https?://[^\\s]+)', var_0).group('url'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 177-5843518
+Original Utterance: remove all special characters, punctuation and spaces from a string `mystring` using regex
+Original Snippet: re.sub('[^A-Za-z0-9]+', '', mystring)
+
+Utterance: remove all special characters , punctuation and spaces from a string var_0 using regex
+Snippet: re.sub('[^A-Za-z0-9]+', '', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 178-36674519
+Original Utterance: create a DatetimeIndex containing 13 periods of the second friday of each month starting from date '2016-01-01'
+Original Snippet: pd.date_range('2016-01-01', freq='WOM-2FRI', periods=13)
+
+Utterance: create a datetimeindex containing 13 periods of the second friday of each month starting from date str_0
+Snippet: pd.date_range('str_0', freq='WOM-2FRI', periods=13)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 179-508657
+Original Utterance: Create multidimensional array `matrix` with 3 rows and 2 columns in python
+Original Snippet: matrix = [[a, b], [c, d], [e, f]]
+
+Utterance: create multidimensional array var_0 with 3 rows and 2 columns in python
+Snippet: var_0 = [[a, b], [c, d], [e, f]]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 180-1007481
+Original Utterance: replace spaces with underscore
+Original Snippet: mystring.replace(' ', '_')
+
+Utterance: replace spaces with underscore
+Snippet: mystring.replace(' ', '_')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 181-51520
+Original Utterance: get an absolute file path of file 'mydir/myfile.txt'
+Original Snippet: os.path.abspath('mydir/myfile.txt')
+
+Utterance: get an absolute file path of file str_0
+Snippet: os.path.abspath('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 182-1249786
+Original Utterance: split string `my_string` on white spaces
+Original Snippet: """ """.join(my_string.split())
+
+Utterance: split string var_0 on white spaces
+Snippet: """ """.join(var_0.split())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 183-4444923
+Original Utterance: get filename without extension from file `filename`
+Original Snippet: os.path.splitext(filename)[0]
+
+Utterance: get filename without extension from file var_0
+Snippet: os.path.splitext(var_0)[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 184-13728486
+Original Utterance: get a list containing the sum of each element `i` in list `l` plus the previous elements
+Original Snippet: [sum(l[:i]) for i, _ in enumerate(l)]
+
+Utterance: get a list containing the sum of each element var_0 in list var_1 plus the previous elements
+Snippet: [sum(var_1[:var_0]) for var_0, _ in enumerate(var_1)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 185-9743134
+Original Utterance: split a string `Docs/src/Scripts/temp` by `/` keeping `/` in the result
+Original Snippet: """Docs/src/Scripts/temp""".replace('/', '/\x00/').split('\x00')
+
+Utterance: split a string str_0 by str_1 keeping str_1 in the result
+Snippet: """str_0""".replace('str_2', '/\x00/').split('\x00')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 186-20546419
+Original Utterance: shuffle columns of an numpy array 'r'
+Original Snippet: np.random.shuffle(np.transpose(r))
+
+Utterance: shuffle columns of an numpy array str_0
+Snippet: np.random.shuffle(np.transpose(str_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 187-32675861
+Original Utterance: copy all values in a column 'B' to a new column 'D' in a pandas data frame 'df'
+Original Snippet: df['D'] = df['B']
+
+Utterance: copy all values in a column str_0 to a new column str_1 in a pandas data frame str_2
+Snippet: str_2['str_1'] = str_2['str_0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 188-14227561
+Original Utterance: find a value within nested json 'data' where the key inside another key 'B' is unknown.
+Original Snippet: list(data['A']['B'].values())[0]['maindata'][0]['Info']
+
+Utterance: find a value within nested json str_0 where the key inside another key str_1 is unknown .
+Snippet: list(str_0['A']['str_1'].values())[0]['maindata'][0]['Info']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 189-14858916
+Original Utterance: check characters of string `string` are true predication of function `predicate`
+Original Snippet: all(predicate(x) for x in string)
+
+Utterance: check characters of string var_0 are true predication of function var_1
+Snippet: all(var_1(x) for x in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 190-574236
+Original Utterance: determine number of files on a drive with python
+Original Snippet: os.statvfs('/').f_files - os.statvfs('/').f_ffree
+
+Utterance: determine number of files on a drive with python
+Snippet: os.statvfs('/').f_files - os.statvfs('/').f_ffree
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 191-7011291
+Original Utterance: None
+Original Snippet: cursor.fetchone()[0]
+
+Utterance: how to get a single result from a sqlite query in python ?
+Snippet: cursor.fetchone()[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 192-6378889
+Original Utterance: convert string `user_input` into a list of integers `user_list`
+Original Snippet: user_list = [int(number) for number in user_input.split(',')]
+
+Utterance: convert string var_0 into a list of integers var_1
+Snippet: var_1 = [int(number) for number in var_0.split(',')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 193-6378889
+Original Utterance: Get a list of integers by splitting  a string `user` with comma
+Original Snippet: [int(s) for s in user.split(',')]
+
+Utterance: get a list of integers by splitting a string var_0 with comma
+Snippet: [int(s) for s in var_0.split(',')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 194-5212870
+Original Utterance: None
+Original Snippet: sorted(list, key=lambda x: (x[0], -x[1]))
+
+Utterance: sorting a python list by two criteria
+Snippet: sorted(list, key=lambda x: (x[0], -x[1]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 195-403421
+Original Utterance: sort a list of objects `ut`, based on a function `cmpfun` in descending order
+Original Snippet: ut.sort(key=cmpfun, reverse=True)
+
+Utterance: sort a list of objects var_0 , based on a function var_1 in descending order
+Snippet: var_0.sort(key=var_1, reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 196-403421
+Original Utterance: reverse list `ut` based on the `count` attribute of each object
+Original Snippet: ut.sort(key=lambda x: x.count, reverse=True)
+
+Utterance: reverse list var_0 based on the var_1 attribute of each object
+Snippet: var_0.sort(key=lambda x: x.var_1, reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 197-403421
+Original Utterance: sort a list of objects `ut` in reverse order by their `count` property
+Original Snippet: ut.sort(key=lambda x: x.count, reverse=True)
+
+Utterance: sort a list of objects var_0 in reverse order by their var_1 property
+Snippet: var_0.sort(key=lambda x: x.var_1, reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 198-19601086
+Original Utterance: click a href button 'Send' with selenium
+Original Snippet: driver.find_element_by_partial_link_text('Send').click()
+
+Utterance: click a href button str_0 with selenium
+Snippet: driver.find_element_by_partial_link_text('str_0').click()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 199-19601086
+Original Utterance: click a href button having text `Send InMail` with selenium
+Original Snippet: driver.findElement(By.linkText('Send InMail')).click()
+
+Utterance: click a href button having text str_0 with selenium
+Snippet: driver.findElement(By.linkText('str_0')).click()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 200-19601086
+Original Utterance: click a href button with text 'Send InMail' with selenium
+Original Snippet: driver.find_element_by_link_text('Send InMail').click()
+
+Utterance: click a href button with text str_0 with selenium
+Snippet: driver.find_element_by_link_text('str_0').click()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 201-3944876
+Original Utterance: cast an int `i` to a string and concat to string 'ME'
+Original Snippet: 'ME' + str(i)
+
+Utterance: cast an int var_0 to a string and concat to string str_0
+Snippet: 'str_0' + str(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 202-40903174
+Original Utterance: None
+Original Snippet: df.sort_values(['System_num', 'Dis'])
+
+Utterance: sorting data in dataframe pandas
+Snippet: df.sort_values(['System_num', 'Dis'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 203-4454298
+Original Utterance: prepend the line '#test firstline\n' to the contents of file 'infile' and save as the file 'outfile'
+Original Snippet: open('outfile', 'w').write('#test firstline\n' + open('infile').read())
+
+Utterance: prepend the line str_0 to the contents of file str_1 and save as the file str_2
+Snippet: open('str_2', 'w').write('str_0' + open('str_1').read())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 204-19729928
+Original Utterance: sort a list `l` by length of value in tuple
+Original Snippet: l.sort(key=lambda t: len(t[1]), reverse=True)
+
+Utterance: sort a list var_0 by length of value in tuple
+Snippet: var_0.sort(key=lambda t: len(t[1]), reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 205-31371879
+Original Utterance: split string `s` by words that ends with 'd'
+Original Snippet: re.findall('\\b(\\w+)d\\b', s)
+
+Utterance: split string var_0 by words that ends with str_0
+Snippet: re.findall('\\b(\\w+)d\\b', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 206-9012008
+Original Utterance: return `True` if string `foobarrrr` contains regex `ba[rzd]`
+Original Snippet: bool(re.search('ba[rzd]', 'foobarrrr'))
+
+Utterance: return var_0 if string var_1 contains regex str_0
+Snippet: bool(re.search('str_0', 'var_1'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 207-7961363
+Original Utterance: Removing duplicates in list `t`
+Original Snippet: list(set(t))
+
+Utterance: removing duplicates in list var_0
+Snippet: list(set(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 208-7961363
+Original Utterance: Removing duplicates in list `source_list`
+Original Snippet: list(set(source_list))
+
+Utterance: removing duplicates in list var_0
+Snippet: list(set(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 209-7961363
+Original Utterance: Removing duplicates in list `abracadabra`
+Original Snippet: list(OrderedDict.fromkeys('abracadabra'))
+
+Utterance: removing duplicates in list var_0
+Snippet: list(OrderedDict.fromkeys('var_0'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 210-5183533
+Original Utterance: Convert array `a` into a list
+Original Snippet: numpy.array(a).reshape(-1).tolist()
+
+Utterance: convert array var_0 into a list
+Snippet: numpy.array(var_0).reshape(-1).tolist()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 211-5183533
+Original Utterance: Convert the first row of numpy matrix `a` to a list
+Original Snippet: numpy.array(a)[0].tolist()
+
+Utterance: convert the first row of numpy matrix var_0 to a list
+Snippet: numpy.array(var_0)[0].tolist()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 212-5999747
+Original Utterance: In `soup`, get the content of the sibling of the `td`  tag with text content `Address:`
+Original Snippet: print(soup.find(text='Address:').findNext('td').contents[0])
+
+Utterance: in var_0 , get the content of the sibling of the var_1 tag with text content str_0
+Snippet: print(var_0.find(text='str_0').findNext('var_1').contents[0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 213-4284648
+Original Utterance: convert elements of each tuple in list `l` into a string  separated by character `@`
+Original Snippet: """ """.join([('%d@%d' % t) for t in l])
+
+Utterance: convert elements of each tuple in list var_0 into a string separated by character str_0
+Snippet: """ """.join([('%d@%d' % t) for t in var_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 214-4284648
+Original Utterance: convert each tuple in list `l` to a string with '@' separating the tuples' elements
+Original Snippet: """ """.join([('%d@%d' % (t[0], t[1])) for t in l])
+
+Utterance: convert each tuple in list var_0 to a string with str_0 separating the tuples ' elements
+Snippet: """ """.join([('%d@%d' % (t[0], t[1])) for t in var_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 215-26809954
+Original Utterance: get the html from the current web page of a Selenium driver
+Original Snippet: driver.execute_script('return document.documentElement.outerHTML;')
+
+Utterance: get the html from the current web page of a selenium driver
+Snippet: driver.execute_script('return document.documentElement.outerHTML;')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 216-29696641
+Original Utterance: Get all matches with regex pattern `\\d+[xX]` in list of string `teststr`
+Original Snippet: [i for i in teststr if re.search('\\d+[xX]', i)]
+
+Utterance: get all matches with regex pattern str_0 in list of string var_0
+Snippet: [i for i in var_0 if re.search('str_0', i)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 217-15315452
+Original Utterance: select values from column 'A' for which corresponding values in column 'B' will be greater than 50, and in column 'C' - equal 900 in dataframe `df`
+Original Snippet: df['A'][(df['B'] > 50) & (df['C'] == 900)]
+
+Utterance: select values from column str_0 for which corresponding values in column str_1 will be greater than 50 , and in column str_2 - equal 900 in dataframe var_0
+Snippet: var_0['str_0'][(var_0['str_1'] > 50) & (var_0['str_2'] == 900)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 218-4642501
+Original Utterance: Sort dictionary `o` in ascending order based on its keys and items
+Original Snippet: sorted(o.items())
+
+Utterance: sort dictionary var_0 in ascending order based on its keys and items
+Snippet: sorted(var_0.items())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 219-4642501
+Original Utterance: get sorted list of keys of dict `d`
+Original Snippet: sorted(d)
+
+Utterance: get sorted list of keys of dict var_0
+Snippet: sorted(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 220-4642501
+Original Utterance: None
+Original Snippet: sorted(d.items())
+
+Utterance: how to sort dictionaries by keys in python
+Snippet: sorted(d.items())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 221-642154
+Original Utterance: convert string "1" into integer
+Original Snippet: int('1')
+
+Utterance: convert string str_0 into integer
+Snippet: int('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 222-642154
+Original Utterance: function to convert strings into integers
+Original Snippet: int()
+
+Utterance: function to convert strings into integers
+Snippet: int()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 223-642154
+Original Utterance: convert items in `T1` to integers
+Original Snippet: T2 = [map(int, x) for x in T1]
+
+Utterance: convert items in var_0 to integers
+Snippet: T2 = [map(int, x) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 224-3777301
+Original Utterance: call a shell script `./test.sh` using subprocess
+Original Snippet: subprocess.call(['./test.sh'])
+
+Utterance: call a shell script str_0 using subprocess
+Snippet: subprocess.call(['str_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 225-3777301
+Original Utterance: call a shell script `notepad` using subprocess
+Original Snippet: subprocess.call(['notepad'])
+
+Utterance: call a shell script var_0 using subprocess
+Snippet: subprocess.call(['var_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 226-7946798
+Original Utterance: combine lists `l1` and `l2`  by alternating their elements
+Original Snippet: [val for pair in zip(l1, l2) for val in pair]
+
+Utterance: combine lists var_0 and var_1 by alternating their elements
+Snippet: [val for pair in zip(var_0, var_1) for val in pair]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 227-8908287
+Original Utterance: encode string 'data to be encoded'
+Original Snippet: encoded = base64.b64encode('data to be encoded')
+
+Utterance: encode string str_0
+Snippet: encoded = base64.b64encode('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 228-8908287
+Original Utterance: encode a string `data to be encoded` to `ascii` encoding
+Original Snippet: encoded = 'data to be encoded'.encode('ascii')
+
+Utterance: encode a string str_0 to var_0 encoding
+Snippet: encoded = 'str_0'.encode('var_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 229-7856296
+Original Utterance: parse tab-delimited CSV file 'text.txt' into a list
+Original Snippet: lol = list(csv.reader(open('text.txt', 'rb'), delimiter='\t'))
+
+Utterance: parse tab-delimited csv file str_0 into a list
+Snippet: lol = list(csv.reader(open('str_0', 'rb'), delimiter='\t'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 230-9035479
+Original Utterance: Get attribute `my_str` of object `my_object`
+Original Snippet: getattr(my_object, my_str)
+
+Utterance: get attribute var_0 of object var_1
+Snippet: getattr(var_1, var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 231-5558418
+Original Utterance: group a list of dicts `LD` into one dict by key
+Original Snippet: print(dict(zip(LD[0], zip(*[list(d.values()) for d in LD]))))
+
+Utterance: group a list of dicts var_0 into one dict by key
+Snippet: print(dict(zip(var_0[0], zip(*[list(d.values()) for d in var_0]))))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 232-638048
+Original Utterance: None
+Original Snippet: sum([pair[0] for pair in list_of_pairs])
+
+Utterance: how do i sum the first value in each tuple in a list of tuples in python ?
+Snippet: sum([pair[0] for pair in list_of_pairs])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 233-14950260
+Original Utterance: convert unicode string u"{'code1':1,'code2':1}" into dictionary
+Original Snippet: d = ast.literal_eval("{'code1':1,'code2':1}")
+
+Utterance: convert unicode string ustr_0 into dictionary
+Snippet: d = ast.literal_eval('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 234-11416772
+Original Utterance: find all words in a string `mystring` that start with the `$` sign
+Original Snippet: [word for word in mystring.split() if word.startswith('$')]
+
+Utterance: find all words in a string var_0 that start with the str_0 sign
+Snippet: [word for word in var_0.split() if word.startswith('str_0')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 235-11331982
+Original Utterance: remove any url within string `text`
+Original Snippet: text = re.sub('^https?:\\/\\/.*[\\r\\n]*', '', text, flags=re.MULTILINE)
+
+Utterance: remove any url within string var_0
+Snippet: var_0 = re.sub('^https?:\\/\\/.*[\\r\\n]*', '', var_0, flags=re.MULTILINE)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 236-34945274
+Original Utterance: replace all elements in array `A` that are not present in array `[1, 3, 4]` with zeros
+Original Snippet: np.where(np.in1d(A, [1, 3, 4]).reshape(A.shape), A, 0)
+
+Utterance: replace all elements in array var_0 that are not present in array str_0 with zeros
+Snippet: np.where(np.in1d(var_0, [str_0]).reshape(var_0.shape), var_0, 0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 237-15819980
+Original Utterance: calculate mean across dimension in a 2d array `a`
+Original Snippet: np.mean(a, axis=1)
+
+Utterance: calculate mean across dimension in a 2d array var_0
+Snippet: np.mean(var_0, axis=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 238-19894365
+Original Utterance: running r script '/pathto/MyrScript.r' from python
+Original Snippet: subprocess.call(['/usr/bin/Rscript', '--vanilla', '/pathto/MyrScript.r'])
+
+Utterance: running r script str_0 from python
+Snippet: subprocess.call(['/usr/bin/Rscript', '--vanilla', 'str_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 239-19894365
+Original Utterance: run r script '/usr/bin/Rscript --vanilla /pathto/MyrScript.r'
+Original Snippet: subprocess.call('/usr/bin/Rscript --vanilla /pathto/MyrScript.r', shell=True)
+
+Utterance: run r script str_0
+Snippet: subprocess.call('str_0', shell=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 240-15907200
+Original Utterance: add a header to a csv file
+Original Snippet: writer.writeheader()
+
+Utterance: add a header to a csv file
+Snippet: writer.writeheader()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 241-33058590
+Original Utterance: replacing nan in the dataframe `df` with row average
+Original Snippet: df.fillna(df.mean(axis=1), axis=1)
+
+Utterance: replacing nan in the dataframe var_0 with row average
+Snippet: var_0.fillna(var_0.mean(axis=1), axis=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 242-12400256
+Original Utterance: Convert unix timestamp '1347517370' to formatted string '%Y-%m-%d %H:%M:%S'
+Original Snippet: time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(1347517370))
+
+Utterance: convert unix timestamp str_0 to formatted string str_1
+Snippet: time.strftime('str_1', time.localtime(1347517370))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 243-1269217
+Original Utterance: Call a base class's class method `do` from derived class `Derived`
+Original Snippet: super(Derived, cls).do(a)
+
+Utterance: call a base class 's class method var_0 from derived class var_1
+Snippet: super(var_1, cls).var_0(a)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 244-23359886
+Original Utterance: selecting rows in Numpy ndarray 'a', where the value in the first column is 0 and value in the second column is 1
+Original Snippet: a[np.where((a[:, (0)] == 0) * (a[:, (1)] == 1))]
+
+Utterance: selecting rows in numpy ndarray str_0 , where the value in the first column is 0 and value in the second column is 1
+Snippet: str_0[np.where((str_0[:, (0)] == 0) * (str_0[:, (1)] == 1))]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 245-4383082
+Original Utterance: separate words delimited by one or more spaces into a list
+Original Snippet: re.split(' +', 'hello world sample text')
+
+Utterance: separate words delimited by one or more spaces into a list
+Snippet: re.split(' +', 'hello world sample text')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 246-14637696
+Original Utterance: length of longest element in list `words`
+Original Snippet: len(max(words, key=len))
+
+Utterance: length of longest element in list var_0
+Snippet: len(max(var_0, key=len))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 247-3933478
+Original Utterance: get the value associated with unicode key 'from_user' of first dictionary in list `result`
+Original Snippet: result[0]['from_user']
+
+Utterance: get the value associated with unicode key str_0 of first dictionary in list var_0
+Snippet: var_0[0]['str_0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 248-39112645
+Original Utterance: Retrieve each line from a file 'File.txt' as a list
+Original Snippet: [line.split() for line in open('File.txt')]
+
+Utterance: retrieve each line from a file str_0 as a list
+Snippet: [line.split() for line in open('str_0')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 249-1031851
+Original Utterance: swap keys with values in a dictionary `a`
+Original Snippet: res = dict((v, k) for k, v in a.items())
+
+Utterance: swap keys with values in a dictionary var_0
+Snippet: res = dict((v, k) for k, v in var_0.items())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 250-8577137
+Original Utterance: Open a file `path/to/FILE_NAME.ext` in write mode
+Original Snippet: new_file = open('path/to/FILE_NAME.ext', 'w')
+
+Utterance: open a file str_0 in write mode
+Snippet: new_file = open('str_0', 'w')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 251-17926273
+Original Utterance: None
+Original Snippet: df.groupby(['col1', 'col2'])['col3'].nunique().reset_index()
+
+Utterance: how to count distinct values in a column of a pandas group by object ?
+Snippet: df.groupby(['col1', 'col2'])['col3'].nunique().reset_index()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 252-3735814
+Original Utterance: Check if any key in the dictionary `dict1` starts with the string `EMP$$`
+Original Snippet: any(key.startswith('EMP$$') for key in dict1)
+
+Utterance: check if any key in the dictionary var_0 starts with the string str_0
+Snippet: any(key.startswith('str_0') for key in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 253-3735814
+Original Utterance: create list of values from dictionary `dict1` that have a key that starts with 'EMP$$'
+Original Snippet: [value for key, value in list(dict1.items()) if key.startswith('EMP$$')]
+
+Utterance: create list of values from dictionary var_0 that have a key that starts with str_0
+Snippet: [value for key, value in list(var_0.items()) if key.startswith('str_0')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 254-26097916
+Original Utterance: convert a pandas series `sf` into a pandas dataframe `df` with columns `email` and `list`
+Original Snippet: pd.DataFrame({'email': sf.index, 'list': sf.values})
+
+Utterance: convert a pandas series var_0 into a pandas dataframe var_1 with columns var_2 and var_3
+Snippet: pd.DataFrame({'var_2': var_0.index, 'var_3': var_0.values})
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 255-4048964
+Original Utterance: print elements of list `list` seperated by tabs `\t`
+Original Snippet: print('\t'.join(map(str, list)))
+
+Utterance: print elements of list var_0 seperated by tabs str_0
+Snippet: print('str_0'.join(map(str, var_0)))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 256-3182716
+Original Utterance: print unicode string '\xd0\xbf\xd1\x80\xd0\xb8' with utf-8
+Original Snippet: print('\xd0\xbf\xd1\x80\xd0\xb8'.encode('raw_unicode_escape'))
+
+Utterance: print unicode string str_0 with utf-8
+Snippet: print('str_0'.encode('raw_unicode_escape'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 257-3182716
+Original Utterance: Encode a latin character in string `Sopet\xc3\xb3n` properly
+Original Snippet: 'Sopet\xc3\xb3n'.encode('latin-1').decode('utf-8')
+
+Utterance: encode a latin character in string str_0 properly
+Snippet: """str_0""".encode('latin-1').decode('utf-8')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 258-1405602
+Original Utterance: resized image `image` to width, height of `(x, y)` with filter of `ANTIALIAS`
+Original Snippet: image = image.resize((x, y), Image.ANTIALIAS)
+
+Utterance: resized image var_0 to width , height of str_0 with filter of var_1
+Snippet: var_0 = var_0.resize(str_0, Image.var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 259-35622945
+Original Utterance: regex, find "n"s only in the middle of string `s`
+Original Snippet: re.findall('n(?<=[^n]n)n+(?=[^n])(?i)', s)
+
+Utterance: regex , find str_0s only in the middle of string var_0
+Snippet: re.findall('n(?<=[^n]n)n+(?=[^n])(?i)', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 260-5306756
+Original Utterance: display the float `1/3*100` as a percentage
+Original Snippet: print('{0:.0f}%'.format(1.0 / 3 * 100))
+
+Utterance: display the float str_0 as a percentage
+Snippet: print('{0:.0f}%'.format(1.0 / 3 * 100))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 261-2878084
+Original Utterance: sort a list of dictionary `mylist` by the key `title`
+Original Snippet: mylist.sort(key=lambda x: x['title'])
+
+Utterance: sort a list of dictionary var_0 by the key var_1
+Snippet: var_0.sort(key=lambda x: x['var_1'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 262-2878084
+Original Utterance: sort a list `l` of dicts by dict value 'title'
+Original Snippet: l.sort(key=lambda x: x['title'])
+
+Utterance: sort a list var_0 of dicts by dict value str_0
+Snippet: var_0.sort(key=lambda x: x['str_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 263-2878084
+Original Utterance: sort a list of dictionaries by the value of keys 'title', 'title_url', 'id' in ascending order.
+Original Snippet: l.sort(key=lambda x: (x['title'], x['title_url'], x['id']))
+
+Utterance: sort a list of dictionaries by the value of keys str_0 , str_1 , str_2 in ascending order .
+Snippet: l.sort(key=lambda x: (x['str_0'], x['str_1'], x['str_2']))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 264-9323159
+Original Utterance: find 10 largest differences between each respective elements of list `l1` and list `l2`
+Original Snippet: heapq.nlargest(10, range(len(l1)), key=lambda i: abs(l1[i] - l2[i]))
+
+Utterance: find 10 largest differences between each respective elements of list var_0 and list var_1
+Snippet: heapq.nlargest(10, range(len(var_0)), key=lambda i: abs(var_0[i] - var_1[i]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 265-29877663
+Original Utterance: BeautifulSoup find all 'span' elements in HTML string `soup` with class of 'starGryB sp'
+Original Snippet: soup.find_all('span', {'class': 'starGryB sp'})
+
+Utterance: beautifulsoup find all str_0 elements in html string var_0 with class of str_1
+Snippet: var_0.find_all('str_0', {'class': 'str_1'})
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 266-24189150
+Original Utterance: write records in dataframe `df` to table 'test' in schema 'a_schema'
+Original Snippet: df.to_sql('test', engine, schema='a_schema')
+
+Utterance: write records in dataframe var_0 to table str_0 in schema str_1
+Snippet: var_0.to_sql('str_0', engine, schema='str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 267-30766151
+Original Utterance: Extract brackets from string `s`
+Original Snippet: brackets = re.sub('[^(){}[\\]]', '', s)
+
+Utterance: extract brackets from string var_0
+Snippet: brackets = re.sub('[^(){}[\\]]', '', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 268-1143379
+Original Utterance: remove duplicate elements from list 'L'
+Original Snippet: list(dict((x[0], x) for x in L).values())
+
+Utterance: remove duplicate elements from list str_0
+Snippet: list(dict((x[0], x) for x in str_0).values())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 269-12330522
+Original Utterance: read a file `file` without newlines
+Original Snippet: [line.rstrip('\n') for line in file]
+
+Utterance: read a file var_0 without newlines
+Snippet: [line.rstrip('\n') for line in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 270-364621
+Original Utterance: get the position of item 1 in `testlist`
+Original Snippet: [i for (i, x) in enumerate(testlist) if (x == 1)]
+
+Utterance: get the position of item 1 in var_0
+Snippet: [i for i, x in enumerate(var_0) if x == 1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 271-364621
+Original Utterance: get the position of item 1 in `testlist`
+Original Snippet: [i for (i, x) in enumerate(testlist) if (x == 1)]
+
+Utterance: get the position of item 1 in var_0
+Snippet: [i for i, x in enumerate(var_0) if x == 1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 272-364621
+Original Utterance: get the position of item 1 in `testlist`
+Original Snippet: for i in [i for (i, x) in enumerate(testlist) if (x == 1)]:
+    pass
+
+Utterance: get the position of item 1 in var_0
+Snippet: for i in [i for i, x in enumerate(var_0) if x == 1]:
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 273-364621
+Original Utterance: get the position of item 1 in `testlist`
+Original Snippet: for i in (i for (i, x) in enumerate(testlist) if (x == 1)):
+    pass
+
+Utterance: get the position of item 1 in var_0
+Snippet: for i in (i for i, x in enumerate(var_0) if x == 1):
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 274-364621
+Original Utterance: get the position of item 1 in `testlist`
+Original Snippet: gen = (i for (i, x) in enumerate(testlist) if (x == 1))
+for i in gen:
+    pass
+
+Utterance: get the position of item 1 in var_0
+Snippet: gen = (i for i, x in enumerate(var_0) if x == 1)
+for i in gen:
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 275-364621
+Original Utterance: get the position of item `element` in list `testlist`
+Original Snippet: print(testlist.index(element))
+
+Utterance: get the position of item var_0 in list var_1
+Snippet: print(var_1.index(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 276-364621
+Original Utterance: get the position of item `element` in list `testlist`
+Original Snippet: try:
+    print(testlist.index(element))
+except ValueError:
+    pass
+
+Utterance: get the position of item var_0 in list var_1
+Snippet: try:
+    print(var_1.index(var_0))
+except ValueError:
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 277-13145368
+Original Utterance: find the first element of the tuple with the maximum second element in a list of tuples `lis`
+Original Snippet: max(lis, key=lambda item: item[1])[0]
+
+Utterance: find the first element of the tuple with the maximum second element in a list of tuples var_0
+Snippet: max(var_0, key=lambda item: item[1])[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 278-13145368
+Original Utterance: get the item at index 0 from the tuple that has maximum value at index 1 in list `lis`
+Original Snippet: max(lis, key=itemgetter(1))[0]
+
+Utterance: get the item at index 0 from the tuple that has maximum value at index 1 in list var_0
+Snippet: max(var_0, key=itemgetter(1))[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 279-2689189
+Original Utterance: Make a delay of 1 second
+Original Snippet: time.sleep(1)
+
+Utterance: make a delay of 1 second
+Snippet: time.sleep(1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 280-12485244
+Original Utterance: convert list of tuples `L` to a string
+Original Snippet: """, """.join('(' + ', '.join(i) + ')' for i in L)
+
+Utterance: convert list of tuples var_0 to a string
+Snippet: """, """.join('(' + ', '.join(i) + ')' for i in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 281-755857
+Original Utterance: Django set default value of field `b` equal to '0000000'
+Original Snippet: b = models.CharField(max_length=7, default='0000000', editable=False)
+
+Utterance: django set default value of field var_0 equal to str_0
+Snippet: var_0 = models.CharField(max_length=7, default='str_0', editable=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 282-16193578
+Original Utterance: Sort lis `list5` in ascending order based on the degrees value of its elements
+Original Snippet: sorted(list5, lambda x: (degree(x), x))
+
+Utterance: sort lis var_0 in ascending order based on the degrees value of its elements
+Snippet: sorted(var_0, lambda x: (degree(x), x))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 283-16193578
+Original Utterance: None
+Original Snippet: sorted(list5, key=lambda vertex: (degree(vertex), vertex))
+
+Utterance: how do i perform secondary sorting in python ?
+Snippet: sorted(list5, key=lambda vertex: (degree(vertex), vertex))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 284-16041405
+Original Utterance: convert a list  into a generator object
+Original Snippet: (n for n in [1, 2, 3, 5])
+
+Utterance: convert a list into a generator object
+Snippet: (n for n in [1, 2, 3, 5])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 285-18837607
+Original Utterance: remove elements from list `oldlist` that have an index number mentioned in list `removelist`
+Original Snippet: newlist = [v for i, v in enumerate(oldlist) if i not in removelist]
+
+Utterance: remove elements from list var_0 that have an index number mentioned in list var_1
+Snippet: newlist = [v for i, v in enumerate(var_0) if i not in var_1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 286-4710067
+Original Utterance: Open a file `yourfile.txt` in write mode
+Original Snippet: f = open('yourfile.txt', 'w')
+
+Utterance: open a file str_0 in write mode
+Snippet: f = open('str_0', 'w')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 287-7373219
+Original Utterance: get attribute 'attr' from object `obj`
+Original Snippet: getattr(obj, 'attr')
+
+Utterance: get attribute str_0 from object var_0
+Snippet: getattr(var_0, 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 288-8171751
+Original Utterance: convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to tuple
+Original Snippet: from functools import reduce
+reduce(lambda a, b: a + b, (('aa',), ('bb',), ('cc',)))
+
+Utterance: convert tuple of tuples str_0 to tuple
+Snippet: from functools import reduce
+reduce(lambda a, b: a + b, str_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 289-8171751
+Original Utterance: convert tuple of tuples `(('aa',), ('bb',), ('cc',))` to list in one line
+Original Snippet: map(lambda a: a[0], (('aa',), ('bb',), ('cc',)))
+
+Utterance: convert tuple of tuples str_0 to list in one line
+Snippet: map(lambda a: a[0], str_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 290-28986489
+Original Utterance: None
+Original Snippet: df['range'].replace(',', '-', inplace=True)
+
+Utterance: python pandas : how to replace a characters in a column of a dataframe ?
+Snippet: df['range'].replace(',', '-', inplace=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 291-19339
+Original Utterance: unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`
+Original Snippet: zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])
+
+Utterance: unzip the list str_0
+Snippet: zip(*[str_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 292-19339
+Original Utterance: unzip the list `[('a', 1), ('b', 2), ('c', 3), ('d', 4)]`
+Original Snippet: zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4)])
+
+Utterance: unzip the list str_0
+Snippet: zip(*[str_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 293-19339
+Original Utterance: unzip list `original`
+Original Snippet: result = ([a for (a, b) in original], [b for (a, b) in original])
+
+Utterance: unzip list var_0
+Snippet: result = [a for a, b in var_0], [b for a, b in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 294-19339
+Original Utterance: unzip list `original` and return a generator
+Original Snippet: result = ((a for (a, b) in original), (b for (a, b) in original))
+
+Utterance: unzip list var_0 and return a generator
+Snippet: result = (a for a, b in var_0), (b for a, b in var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 295-19339
+Original Utterance: unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]`
+Original Snippet: zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])
+
+Utterance: unzip list str_0
+Snippet: zip(*[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 296-19339
+Original Utterance: unzip list `[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', )]` and fill empty results with None
+Original Snippet: map(None, *[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])
+
+Utterance: unzip list str_0 and fill empty results with none
+Snippet: map(None, *[('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e',)])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 297-1960516
+Original Utterance: encode `Decimal('3.9')` to a JSON string
+Original Snippet: json.dumps(Decimal('3.9'))
+
+Utterance: encode str_0 to a json string
+Snippet: json.dumps(Decimal('3.9'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 298-1024847
+Original Utterance: Add key "mynewkey" to dictionary `d` with value "mynewvalue"
+Original Snippet: d['mynewkey'] = 'mynewvalue'
+
+Utterance: add key str_0 to dictionary var_0 with value str_1
+Snippet: var_0['str_0'] = 'str_1'
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 299-1024847
+Original Utterance: Add key 'a' to dictionary `data` with value 1
+Original Snippet: data.update({'a': 1, })
+
+Utterance: add key str_0 to dictionary var_0 with value 1
+Snippet: var_0.update({'str_0': 1})
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 300-1024847
+Original Utterance: Add key 'a' to dictionary `data` with value 1
+Original Snippet: data.update(dict(a=1))
+
+Utterance: add key str_0 to dictionary var_0 with value 1
+Snippet: var_0.update(dict(str_0=1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 301-1024847
+Original Utterance: Add key 'a' to dictionary `data` with value 1
+Original Snippet: data.update(a=1)
+
+Utterance: add key str_0 to dictionary var_0 with value 1
+Snippet: var_0.update(str_0=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 302-35837346
+Original Utterance: find maximal value in matrix `matrix`
+Original Snippet: max([max(i) for i in matrix])
+
+Utterance: find maximal value in matrix var_0
+Snippet: max([max(i) for i in var_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 303-20457038
+Original Utterance: Round number `answer` to 2 precision after the decimal point
+Original Snippet: answer = str(round(answer, 2))
+
+Utterance: round number var_0 to 2 precision after the decimal point
+Snippet: var_0 = str(round(var_0, 2))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 304-2890896
+Original Utterance: extract ip address from an html string
+Original Snippet: ip = re.findall('[0-9]+(?:\\.[0-9]+){3}', s)
+
+Utterance: extract ip address from an html string
+Snippet: ip = re.findall('[0-9]+(?:\\.[0-9]+){3}', s)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 305-29836836
+Original Utterance: filter dataframe `df` by values in column `A` that appear more than once
+Original Snippet: df.groupby('A').filter(lambda x: len(x) > 1)
+
+Utterance: filter dataframe var_0 by values in column var_1 that appear more than once
+Snippet: var_0.groupby('var_1').filter(lambda x: len(x) > 1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 306-2545397
+Original Utterance: append each line in file `myfile` into a list
+Original Snippet: [x for x in myfile.splitlines() if x != '']
+
+Utterance: append each line in file var_0 into a list
+Snippet: [x for x in var_0.splitlines() if x != '']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 307-2545397
+Original Utterance: Get a list of integers `lst` from a file `filename.txt`
+Original Snippet: lst = map(int, open('filename.txt').readlines())
+
+Utterance: get a list of integers var_0 from a file str_0
+Snippet: var_0 = map(int, open('str_0').readlines())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 308-35420052
+Original Utterance: add color bar with image `mappable` to plot `plt`
+Original Snippet: plt.colorbar(mappable=mappable, cax=ax3)
+
+Utterance: add color bar with image var_0 to plot var_1
+Snippet: var_1.colorbar(var_0=var_0, cax=ax3)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 309-29903025
+Original Utterance: count most frequent 100 words in column 'text' of dataframe `df`
+Original Snippet: Counter(' '.join(df['text']).split()).most_common(100)
+
+Utterance: count most frequent 100 words in column str_0 of dataframe var_0
+Snippet: Counter(' '.join(var_0['str_0']).split()).most_common(100)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 310-16330838
+Original Utterance: None
+Original Snippet: re.findall('(.+?):(.+?)\\b ?', text)
+
+Utterance: python split a string using regex
+Snippet: re.findall('(.+?):(.+?)\\b ?', text)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 311-7378180
+Original Utterance: generate all 2-element subsets of tuple `(1, 2, 3)`
+Original Snippet: list(itertools.combinations((1, 2, 3), 2))
+
+Utterance: generate all 2-element subsets of tuple str_0
+Snippet: list(itertools.combinations(str_0, 2))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 312-4530069
+Original Utterance: get a value of datetime.today() in the UTC time zone
+Original Snippet: datetime.now(pytz.utc)
+
+Utterance: get a value of datetime.today ( ) in the utc time zone
+Snippet: datetime.now(pytz.utc)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 313-4842956
+Original Utterance: Get a new list `list2`by removing empty list from a list of lists `list1`
+Original Snippet: list2 = [x for x in list1 if x != []]
+
+Utterance: get a new list var_0by removing empty list from a list of lists var_1
+Snippet: var_0 = [x for x in var_1 if x != []]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 314-4842956
+Original Utterance: Create `list2` to contain the lists from list `list1` excluding the empty lists from `list1`
+Original Snippet: list2 = [x for x in list1 if x]
+
+Utterance: create var_0 to contain the lists from list var_1 excluding the empty lists from var_1
+Snippet: var_0 = [x for x in var_2 if x]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 315-9262278
+Original Utterance: Django response with JSON `data`
+Original Snippet: return HttpResponse(data, mimetype='application/json')
+
+Utterance: django response with json var_0
+Snippet: return HttpResponse(var_0, mimetype='application/json')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 316-17284947
+Original Utterance: get all text that is not enclosed within square brackets in string `example_str`
+Original Snippet: re.findall('(.*?)\\[.*?\\]', example_str)
+
+Utterance: get all text that is not enclosed within square brackets in string var_0
+Snippet: re.findall('(.*?)\\[.*?\\]', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 317-17284947
+Original Utterance: Use a regex to get all text in a string `example_str` that is not surrounded by square brackets
+Original Snippet: re.findall('(.*?)(?:\\[.*?\\]|$)', example_str)
+
+Utterance: use a regex to get all text in a string var_0 that is not surrounded by square brackets
+Snippet: re.findall('(.*?)(?:\\[.*?\\]|$)', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 318-14182339
+Original Utterance: get whatever is between parentheses as a single match, and any char outside as an individual match in string '(zyx)bc'
+Original Snippet: re.findall('\\(.+?\\)|\\w', '(zyx)bc')
+
+Utterance: get whatever is between parentheses as a single match , and any char outside as an individual match in string str_0
+Snippet: re.findall('\\(.+?\\)|\\w', 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 319-14182339
+Original Utterance: match regex '\\((.*?)\\)|(\\w)' with string '(zyx)bc'
+Original Snippet: re.findall('\\((.*?)\\)|(\\w)', '(zyx)bc')
+
+Utterance: match regex str_0 with string str_1
+Snippet: re.findall('str_0', 'str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 320-14182339
+Original Utterance: match multiple regex patterns with the alternation operator `|` in a string `(zyx)bc`
+Original Snippet: re.findall('\\(.*?\\)|\\w', '(zyx)bc')
+
+Utterance: match multiple regex patterns with the alternation operator str_0 in a string str_1
+Snippet: re.findall('\\(.*?\\)|\\w', 'str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 321-7126916
+Original Utterance: formate each string cin list `elements` into pattern '%{0}%'
+Original Snippet: elements = ['%{0}%'.format(element) for element in elements]
+
+Utterance: formate each string cin list var_0 into pattern str_0
+Snippet: var_0 = ['str_0'.format(element) for element in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 322-3595685
+Original Utterance: Open a background process 'background-process' with arguments 'arguments'
+Original Snippet: subprocess.Popen(['background-process', 'arguments'])
+
+Utterance: open a background process str_0 with arguments str_1
+Snippet: subprocess.Popen(['str_0', 'str_1'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 323-18453566
+Original Utterance: get list of values from dictionary 'mydict' w.r.t. list of keys 'mykeys'
+Original Snippet: [mydict[x] for x in mykeys]
+
+Utterance: get list of values from dictionary str_0 w.r.t . list of keys str_1
+Snippet: [str_0[x] for x in str_1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 324-12692135
+Original Utterance: convert list `[('Name', 'Joe'), ('Age', 22)]` into a dictionary
+Original Snippet: dict([('Name', 'Joe'), ('Age', 22)])
+
+Utterance: convert list str_0 into a dictionary
+Snippet: dict([str_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 325-14401047
+Original Utterance: average each two columns of array `data`
+Original Snippet: data.reshape(-1, j).mean(axis=1).reshape(data.shape[0], -1)
+
+Utterance: average each two columns of array var_0
+Snippet: var_0.reshape(-1, j).mean(axis=1).reshape(var_0.shape[0], -1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 326-18886596
+Original Utterance: double backslash escape all double quotes in string `s`
+Original Snippet: print(s.encode('unicode-escape').replace('"', '\\"'))
+
+Utterance: double backslash escape all double quotes in string var_0
+Snippet: print(var_0.encode('unicode-escape').replace('"', '\\"'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 327-5932059
+Original Utterance: split a string into a list of words and whitespace
+Original Snippet: re.split('(\\W+)', s)
+
+Utterance: split a string into a list of words and whitespace
+Snippet: re.split('(\\W+)', s)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 328-9938130
+Original Utterance: None
+Original Snippet: df.plot(kind='barh', stacked=True)
+
+Utterance: plotting stacked barplots on a panda data frame
+Snippet: df.plot(kind='barh', stacked=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 329-35945473
+Original Utterance: reverse the keys and values in a dictionary `myDictionary`
+Original Snippet: {i[1]: i[0] for i in list(myDictionary.items())}
+
+Utterance: reverse the keys and values in a dictionary var_0
+Snippet: {i[1]: i[0] for i in list(var_0.items())}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 330-30729735
+Original Utterance: finding the index of elements containing substring 'how' and 'what' in a list of strings 'myList'.
+Original Snippet: [i for i, j in enumerate(myList) if 'how' in j.lower() or 'what' in j.lower()]
+
+Utterance: finding the index of elements containing substring str_0 and str_1 in a list of strings str_2 .
+Snippet: [i for i, j in enumerate(str_2) if 'str_0' in j.lower() or 'str_1' in j.lower()
+    ]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 331-1303243
+Original Utterance: check if object `obj` is a string
+Original Snippet: isinstance(obj, str)
+
+Utterance: check if object var_0 is a string
+Snippet: isinstance(var_0, str)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 332-1303243
+Original Utterance: check if object `o` is a string
+Original Snippet: isinstance(o, str)
+
+Utterance: check if object var_0 is a string
+Snippet: isinstance(var_0, str)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 333-1303243
+Original Utterance: check if object `o` is a string
+Original Snippet: (type(o) is str)
+
+Utterance: check if object var_0 is a string
+Snippet: type(var_0) is str
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 334-1303243
+Original Utterance: check if object `o` is a string
+Original Snippet: isinstance(o, str)
+
+Utterance: check if object var_0 is a string
+Snippet: isinstance(var_0, str)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 335-1303243
+Original Utterance: check if `obj_to_test` is a string
+Original Snippet: isinstance(obj_to_test, str)
+
+Utterance: check if var_0 is a string
+Snippet: isinstance(var_0, str)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 336-8177079
+Original Utterance: append list `list1` to `list2`
+Original Snippet: list2.extend(list1)
+
+Utterance: append list var_0 to var_1
+Snippet: var_1.extend(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 337-8177079
+Original Utterance: append list `mylog` to `list1`
+Original Snippet: list1.extend(mylog)
+
+Utterance: append list var_0 to var_1
+Snippet: var_1.extend(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 338-8177079
+Original Utterance: append list `a` to `c`
+Original Snippet: c.extend(a)
+
+Utterance: append list var_0 to var_1
+Snippet: var_1.extend(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 339-8177079
+Original Utterance: append items in list `mylog` to `list1`
+Original Snippet: for line in mylog:
+    list1.append(line)
+
+Utterance: append items in list var_0 to var_1
+Snippet: for line in var_0:
+    var_1.append(line)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 340-4126227
+Original Utterance: append a tuple of elements from list `a` with indexes '[0][0] [0][2]' to list `b`
+Original Snippet: b.append((a[0][0], a[0][2]))
+
+Utterance: append a tuple of elements from list var_0 with indexes str_0 to list var_1
+Snippet: var_1.append((var_0[0][0], var_0[0][2]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 341-34902378
+Original Utterance: Initialize `SECRET_KEY` in flask config with `Your_secret_string `
+Original Snippet: app.config['SECRET_KEY'] = 'Your_secret_string'
+
+Utterance: initialize var_0 in flask config with str_0
+Snippet: app.config['var_0'] = 'str_0'
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 342-22799300
+Original Utterance: unpack a series of tuples in pandas into a DataFrame with column names 'out-1' and 'out-2'
+Original Snippet: pd.DataFrame(out.tolist(), columns=['out-1', 'out-2'], index=out.index)
+
+Utterance: unpack a series of tuples in pandas into a dataframe with column names str_0 and str_1
+Snippet: pd.DataFrame(out.tolist(), columns=['str_0', 'str_1'], index=out.index)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 343-1762484
+Original Utterance: find the index of an element 'MSFT' in a list `stocks_list`
+Original Snippet: [x for x in range(len(stocks_list)) if stocks_list[x] == 'MSFT']
+
+Utterance: find the index of an element str_0 in a list var_0
+Snippet: [x for x in range(len(var_0)) if var_0[x] == 'str_0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 344-3464359
+Original Utterance: rotate the xtick labels of matplotlib plot `ax` by `45` degrees to make long labels readable
+Original Snippet: ax.set_xticklabels(labels, rotation=45)
+
+Utterance: rotate the xtick labels of matplotlib plot var_0 by str_0 degrees to make long labels readable
+Snippet: var_0.set_xticklabels(labels, rotation=45)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 345-875968
+Original Utterance: remove symbols from a string `s`
+Original Snippet: re.sub('[^\\w]', ' ', s)
+
+Utterance: remove symbols from a string var_0
+Snippet: re.sub('[^\\w]', ' ', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 346-31258561
+Original Utterance: Get the current directory of a script
+Original Snippet: os.path.basename(os.path.dirname(os.path.realpath(__file__)))
+
+Utterance: get the current directory of a script
+Snippet: os.path.basename(os.path.dirname(os.path.realpath(__file__)))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 347-34750084
+Original Utterance: Find octal characters matches from a string `str` using regex
+Original Snippet: print(re.findall("'\\\\[0-7]{1,3}'", str))
+
+Utterance: find octal characters matches from a string var_0 using regex
+Snippet: print(re.findall("'\\\\[0-7]{1,3}'", var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 348-13209288
+Original Utterance: split string `input` based on occurrences of regex pattern '[ ](?=[A-Z]+\\b)'
+Original Snippet: re.split('[ ](?=[A-Z]+\\b)', input)
+
+Utterance: split string var_0 based on occurrences of regex pattern str_0
+Snippet: re.split('str_0', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 349-13209288
+Original Utterance: Split string `input` at every space followed by an upper-case letter
+Original Snippet: re.split('[ ](?=[A-Z])', input)
+
+Utterance: split string var_0 at every space followed by an upper-case letter
+Snippet: re.split('[ ](?=[A-Z])', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 350-24642040
+Original Utterance: send multipart encoded file `files` to url `url` with headers `headers` and metadata `data`
+Original Snippet: r = requests.post(url, files=files, headers=headers, data=data)
+
+Utterance: send multipart encoded file var_0 to url var_1 with headers var_2 and metadata var_3
+Snippet: r = requests.post(var_1, var_0=var_0, var_2=var_2, var_3=var_3)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 351-4290716
+Original Utterance: write bytes `bytes_` to a file `filename` in python 3
+Original Snippet: open('filename', 'wb').write(bytes_)
+
+Utterance: write bytes var_0 to a file var_1 in python 3
+Snippet: open('var_1', 'wb').write(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 352-33078554
+Original Utterance: get a list from a list `lst` with values mapped into a dictionary `dct`
+Original Snippet: [dct[k] for k in lst]
+
+Utterance: get a list from a list var_0 with values mapped into a dictionary var_1
+Snippet: [var_1[k] for k in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 353-15247628
+Original Utterance: find duplicate names in column 'name' of the dataframe `x`
+Original Snippet: x.set_index('name').index.get_duplicates()
+
+Utterance: find duplicate names in column str_0 of the dataframe var_0
+Snippet: var_0.set_index('str_0').index.get_duplicates()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 354-783897
+Original Utterance: truncate float 1.923328437452 to 3 decimal places
+Original Snippet: round(1.923328437452, 3)
+
+Utterance: truncate float 1.923328437452 to 3 decimal places
+Snippet: round(1.923328437452, 3)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 355-22859493
+Original Utterance: sort list `li` in descending order based on the date value in second element of each list in list `li`
+Original Snippet: sorted(li, key=lambda x: datetime.strptime(x[1], '%d/%m/%Y'), reverse=True)
+
+Utterance: sort list var_0 in descending order based on the date value in second element of each list in list var_0
+Snippet: sorted(var_1, key=lambda x: datetime.strptime(x[1], '%d/%m/%Y'), reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 356-29394552
+Original Utterance: place the radial ticks in plot `ax` at 135 degrees
+Original Snippet: ax.set_rlabel_position(135)
+
+Utterance: place the radial ticks in plot var_0 at 135 degrees
+Snippet: var_0.set_rlabel_position(135)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 357-3320406
+Original Utterance: check if path `my_path` is an absolute path
+Original Snippet: os.path.isabs(my_path)
+
+Utterance: check if path var_0 is an absolute path
+Snippet: os.path.isabs(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 358-2212433
+Original Utterance: get number of keys in dictionary `yourdict`
+Original Snippet: len(list(yourdict.keys()))
+
+Utterance: get number of keys in dictionary var_0
+Snippet: len(list(var_0.keys()))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 359-2212433
+Original Utterance: count the number of keys in dictionary `yourdictfile`
+Original Snippet: len(set(open(yourdictfile).read().split()))
+
+Utterance: count the number of keys in dictionary var_0
+Snippet: len(set(open(var_0).read().split()))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 360-20067636
+Original Utterance: pandas dataframe get first row of each group by 'id'
+Original Snippet: df.groupby('id').first()
+
+Utterance: pandas dataframe get first row of each group by str_0
+Snippet: df.groupby('str_0').first()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 361-40924332
+Original Utterance: split a list in first column  into multiple columns keeping other columns as well in pandas data frame
+Original Snippet: pd.concat([df[0].apply(pd.Series), df[1]], axis=1)
+
+Utterance: split a list in first column into multiple columns keeping other columns as well in pandas data frame
+Snippet: pd.concat([df[0].apply(pd.Series), df[1]], axis=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 362-30759776
+Original Utterance: extract attributes 'src="js/([^"]*\\bjquery\\b[^"]*)"' from string `data`
+Original Snippet: re.findall('src="js/([^"]*\\bjquery\\b[^"]*)"', data)
+
+Utterance: extract attributes str_0 from string var_0
+Snippet: re.findall('str_0', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 363-25388796
+Original Utterance: Sum integers contained in strings in list `['', '3.4', '', '', '1.0']`
+Original Snippet: sum(int(float(item)) for item in [_f for _f in ['', '3.4', '', '', '1.0'] if _f])
+
+Utterance: sum integers contained in strings in list str_0
+Snippet: sum(int(float(item)) for item in [_f for _f in [str_0] if _f])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 364-804995
+Original Utterance: Call a subprocess with arguments `c:\\Program Files\\VMware\\VMware Server\\vmware-cmd.bat` that may contain spaces
+Original Snippet: subprocess.Popen(['c:\\Program Files\\VMware\\VMware Server\\vmware-cmd.bat'])
+
+Utterance: call a subprocess with arguments str_0 that may contain spaces
+Snippet: subprocess.Popen(['str_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 365-26441253
+Original Utterance: reverse a priority queue `q` in python without using classes
+Original Snippet: q.put((-n, n))
+
+Utterance: reverse a priority queue var_0 in python without using classes
+Snippet: var_0.put((-n, n))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 366-18897261
+Original Utterance: make a barplot of data in column `group` of dataframe `df` colour-coded according to list `color`
+Original Snippet: df['group'].plot(kind='bar', color=['r', 'g', 'b', 'r', 'g', 'b', 'r'])
+
+Utterance: make a barplot of data in column var_0 of dataframe var_1 colour-coded according to list var_2
+Snippet: var_1['var_0'].plot(kind='bar', var_2=['r', 'g', 'b', 'r', 'g', 'b', 'r'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 367-373194
+Original Utterance: find all matches of regex pattern '([a-fA-F\\d]{32})' in string `data`
+Original Snippet: re.findall('([a-fA-F\\d]{32})', data)
+
+Utterance: find all matches of regex pattern str_0 in string var_0
+Snippet: re.findall('str_0', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 368-518021
+Original Utterance: Get the length of list `my_list`
+Original Snippet: len(my_list)
+
+Utterance: get the length of list var_0
+Snippet: len(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 369-518021
+Original Utterance: Getting the length of array `l`
+Original Snippet: len(l)
+
+Utterance: getting the length of array var_0
+Snippet: len(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 370-518021
+Original Utterance: Getting the length of array `s`
+Original Snippet: len(s)
+
+Utterance: getting the length of array var_0
+Snippet: len(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 371-518021
+Original Utterance: Getting the length of `my_tuple`
+Original Snippet: len(my_tuple)
+
+Utterance: getting the length of var_0
+Snippet: len(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 372-518021
+Original Utterance: Getting the length of `my_string`
+Original Snippet: len(my_string)
+
+Utterance: getting the length of var_0
+Snippet: len(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 373-40452956
+Original Utterance: remove escape character from string "\\a"
+Original Snippet: """\\a""".decode('string_escape')
+
+Utterance: remove escape character from string str_0
+Snippet: """str_0""".decode('string_escape')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 374-8687018
+Original Utterance: replace each 'a' with 'b' and each 'b' with 'a' in the string 'obama' in a single pass.
+Original Snippet: """obama""".replace('a', '%temp%').replace('b', 'a').replace('%temp%', 'b')
+
+Utterance: replace each str_0 with str_1 and each str_1 with str_0 in the string str_4 in a single pass .
+Snippet: """str_4""".replace('str_3', '%temp%').replace('str_2', 'str_3').replace(
+    '%temp%', 'str_2')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 375-303200
+Original Utterance: remove directory tree '/folder_name'
+Original Snippet: shutil.rmtree('/folder_name')
+
+Utterance: remove directory tree str_0
+Snippet: shutil.rmtree('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 376-13740672
+Original Utterance: create a new column `weekday` in pandas data frame `data` based on the values in column `my_dt`
+Original Snippet: data['weekday'] = data['my_dt'].apply(lambda x: x.weekday())
+
+Utterance: create a new column var_0 in pandas data frame var_1 based on the values in column var_2
+Snippet: var_1['var_0'] = var_1['var_2'].apply(lambda x: x.var_0())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 377-20950650
+Original Utterance: reverse sort Counter `x` by values
+Original Snippet: sorted(x, key=x.get, reverse=True)
+
+Utterance: reverse sort counter var_0 by values
+Snippet: sorted(var_0, key=var_0.get, reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 378-20950650
+Original Utterance: reverse sort counter `x` by value
+Original Snippet: sorted(list(x.items()), key=lambda pair: pair[1], reverse=True)
+
+Utterance: reverse sort counter var_0 by value
+Snippet: sorted(list(var_0.items()), key=lambda pair: pair[1], reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 379-9775297
+Original Utterance: append a numpy array 'b' to a numpy array 'a'
+Original Snippet: np.vstack((a, b))
+
+Utterance: append a numpy array str_0 to a numpy array str_1
+Snippet: np.vstack((str_1, str_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 380-21887754
+Original Utterance: numpy concatenate two arrays `a` and `b` along the first axis
+Original Snippet: print(concatenate((a, b), axis=0))
+
+Utterance: numpy concatenate two arrays var_0 and var_1 along the first axis
+Snippet: print(concatenate((var_0, var_1), axis=0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 381-21887754
+Original Utterance: numpy concatenate two arrays `a` and `b` along the second axis
+Original Snippet: print(concatenate((a, b), axis=1))
+
+Utterance: numpy concatenate two arrays var_0 and var_1 along the second axis
+Snippet: print(concatenate((var_0, var_1), axis=1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 382-21887754
+Original Utterance: numpy concatenate two arrays `a` and `b` along the first axis
+Original Snippet: c = np.r_[(a[None, :], b[None, :])]
+
+Utterance: numpy concatenate two arrays var_0 and var_1 along the first axis
+Snippet: c = np.r_[var_0[(None), :], var_1[(None), :]]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 383-21887754
+Original Utterance: numpy concatenate two arrays `a` and `b` along the first axis
+Original Snippet: np.array((a, b))
+
+Utterance: numpy concatenate two arrays var_0 and var_1 along the first axis
+Snippet: np.array((var_0, var_1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 384-2805231
+Original Utterance: fetch address information for host 'google.com' ion port 80
+Original Snippet: print(socket.getaddrinfo('google.com', 80))
+
+Utterance: fetch address information for host str_0 ion port 80
+Snippet: print(socket.getaddrinfo('str_0', 80))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 385-17552997
+Original Utterance: add a column 'day' with value 'sat' to dataframe `df`
+Original Snippet: df.xs('sat', level='day', drop_level=False)
+
+Utterance: add a column str_0 with value str_1 to dataframe var_0
+Snippet: var_0.xs('str_1', level='str_0', drop_level=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 386-4356842
+Original Utterance: return a 401 unauthorized in django
+Original Snippet: return HttpResponse('Unauthorized', status=401)
+
+Utterance: return a 401 unauthorized in django
+Snippet: return HttpResponse('Unauthorized', status=401)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 387-13598363
+Original Utterance: Flask set folder 'wherever' as the default template folder
+Original Snippet: Flask(__name__, template_folder='wherever')
+
+Utterance: flask set folder str_0 as the default template folder
+Snippet: Flask(__name__, template_folder='str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 388-1849375
+Original Utterance: How do I INSERT INTO t1 (SELECT * FROM t2) in SQLAlchemy?
+Original Snippet: session.execute('INSERT INTO t1 (SELECT * FROM t2)')
+
+Utterance: how do i insert into t1 ( select * from t2 ) in sqlalchemy ?
+Snippet: session.execute('INSERT INTO t1 (SELECT * FROM t2)')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 389-3398589
+Original Utterance: sort a list of lists 'c2' such that third row comes first
+Original Snippet: c2.sort(key=lambda row: row[2])
+
+Utterance: sort a list of lists str_0 such that third row comes first
+Snippet: str_0.sort(key=lambda row: row[2])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 390-3398589
+Original Utterance: None
+Original Snippet: c2.sort(key=lambda row: (row[2], row[1], row[0]))
+
+Utterance: sorting a list of lists in python
+Snippet: c2.sort(key=lambda row: (row[2], row[1], row[0]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 391-3398589
+Original Utterance: None
+Original Snippet: c2.sort(key=lambda row: (row[2], row[1]))
+
+Utterance: sorting a list of lists in python
+Snippet: c2.sort(key=lambda row: (row[2], row[1]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 392-10960463
+Original Utterance: set font `Arial` to display non-ascii characters in matplotlib
+Original Snippet: matplotlib.rc('font', **{'sans-serif': 'Arial', 'family': 'sans-serif'})
+
+Utterance: set font var_0 to display non-ascii characters in matplotlib
+Snippet: matplotlib.rc('font', **{'sans-serif': 'var_0', 'family': 'sans-serif'})
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 393-20576618
+Original Utterance: Convert  DateTime column 'date' of pandas dataframe 'df' to ordinal
+Original Snippet: df['date'].apply(lambda x: x.toordinal())
+
+Utterance: convert datetime column str_0 of pandas dataframe str_1 to ordinal
+Snippet: str_1['str_0'].apply(lambda x: x.toordinal())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 394-7263824
+Original Utterance: get html source of Selenium WebElement `element`
+Original Snippet: element.get_attribute('innerHTML')
+
+Utterance: get html source of selenium webelement var_0
+Snippet: var_0.get_attribute('innerHTML')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 395-31793195
+Original Utterance: Get the integer location of a key `bob` in a pandas data frame
+Original Snippet: df.index.get_loc('bob')
+
+Utterance: get the integer location of a key var_0 in a pandas data frame
+Snippet: df.index.get_loc('var_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 396-7574841
+Original Utterance: open a 'gnome' terminal from python script and run  'sudo apt-get update' command.
+Original Snippet: os.system('gnome-terminal -e \'bash -c "sudo apt-get update; exec bash"\'')
+
+Utterance: open a str_0 terminal from python script and run str_1 command .
+Snippet: os.system('gnome-terminal -e \'bash -c "sudo apt-get update; exec bash"\'')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 397-10487278
+Original Utterance: add an item with key 'third_key' and value 1 to an dictionary `my_dict`
+Original Snippet: my_dict.update({'third_key': 1})
+
+Utterance: add an item with key str_0 and value 1 to an dictionary var_0
+Snippet: var_0.update({'str_0': 1})
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 398-10487278
+Original Utterance: declare an array
+Original Snippet: my_list = []
+
+Utterance: declare an array
+Snippet: my_list = []
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 399-10487278
+Original Utterance: Insert item `12` to a list `my_list`
+Original Snippet: my_list.append(12)
+
+Utterance: insert item str_0 to a list var_0
+Snippet: var_0.append(12)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 400-10155684
+Original Utterance: add an entry 'wuggah' at the beginning of list `myList`
+Original Snippet: myList.insert(0, 'wuggah')
+
+Utterance: add an entry str_0 at the beginning of list var_0
+Snippet: var_0.insert(0, 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 401-3519125
+Original Utterance: convert a hex-string representation to actual bytes
+Original Snippet: """\\xF3\\xBE\\x80\\x80""".replace('\\x', '').decode('hex')
+
+Utterance: convert a hex-string representation to actual bytes
+Snippet: """\\xF3\\xBE\\x80\\x80""".replace('\\x', '').decode('hex')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 402-40144769
+Original Utterance: select the last column of dataframe `df`
+Original Snippet: df[df.columns[-1]]
+
+Utterance: select the last column of dataframe var_0
+Snippet: var_0[var_0.columns[-1]]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 403-30787901
+Original Utterance: get the first value from dataframe `df` where column 'Letters' is equal to 'C'
+Original Snippet: df.loc[df['Letters'] == 'C', 'Letters'].values[0]
+
+Utterance: get the first value from dataframe var_0 where column str_0 is equal to str_1
+Snippet: var_0.loc[var_0['str_0'] == 'str_1', 'str_0'].values[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 404-18730044
+Original Utterance: converting two lists `[1, 2, 3]` and `[4, 5, 6]` into a matrix
+Original Snippet: np.column_stack(([1, 2, 3], [4, 5, 6]))
+
+Utterance: converting two lists str_0 and str_1 into a matrix
+Snippet: np.column_stack(([str_0], [str_1]))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 405-402504
+Original Utterance: get the type of `i`
+Original Snippet: type(i)
+
+Utterance: get the type of var_0
+Snippet: type(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 406-402504
+Original Utterance: determine the type of variable `v`
+Original Snippet: type(v)
+
+Utterance: determine the type of variable var_0
+Snippet: type(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 407-402504
+Original Utterance: determine the type of variable `v`
+Original Snippet: type(v)
+
+Utterance: determine the type of variable var_0
+Snippet: type(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 408-402504
+Original Utterance: determine the type of variable `v`
+Original Snippet: type(v)
+
+Utterance: determine the type of variable var_0
+Snippet: type(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 409-402504
+Original Utterance: determine the type of variable `v`
+Original Snippet: type(v)
+
+Utterance: determine the type of variable var_0
+Snippet: type(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 410-402504
+Original Utterance: get the type of variable `variable_name`
+Original Snippet: print(type(variable_name))
+
+Utterance: get the type of variable var_0
+Snippet: print(type(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 411-2300756
+Original Utterance: get the 5th item of a generator
+Original Snippet: next(itertools.islice(range(10), 5, 5 + 1))
+
+Utterance: get the 5th item of a generator
+Snippet: next(itertools.islice(range(10), 5, 5 + 1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 412-20056548
+Original Utterance: Print a string `word` with string format
+Original Snippet: print('"{}"'.format(word))
+
+Utterance: print a string var_0 with string format
+Snippet: print('"{}"'.format(var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 413-8546245
+Original Utterance: join a list of strings `list` using a space ' '
+Original Snippet: """ """.join(list)
+
+Utterance: join a list of strings var_0 using a space str_0
+Snippet: """ """.join(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 414-2276416
+Original Utterance: create list `y` containing two empty lists
+Original Snippet: y = [[] for n in range(2)]
+
+Utterance: create list var_0 containing two empty lists
+Snippet: var_0 = [[] for n in range(2)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 415-3925614
+Original Utterance: read a file 'C:/name/MyDocuments/numbers' into a list `data`
+Original Snippet: data = [line.strip() for line in open('C:/name/MyDocuments/numbers', 'r')]
+
+Utterance: read a file str_0 into a list var_0
+Snippet: var_0 = [line.strip() for line in open('str_0', 'r')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 416-22187233
+Original Utterance: delete all occurrences of character 'i' in string 'it is icy'
+Original Snippet: """""".join([char for char in 'it is icy' if char != 'i'])
+
+Utterance: delete all occurrences of character str_0 in string str_1
+Snippet: """""".join([char for char in 'str_1' if char != 'str_0'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 417-22187233
+Original Utterance: delete all instances of a character 'i' in a string 'it is icy'
+Original Snippet: re.sub('i', '', 'it is icy')
+
+Utterance: delete all instances of a character str_0 in a string str_1
+Snippet: re.sub('str_0', '', 'str_1')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 418-22187233
+Original Utterance: delete all characters "i" in string "it is icy"
+Original Snippet: """it is icy""".replace('i', '')
+
+Utterance: delete all characters str_0 in string str_1
+Snippet: """str_1""".replace('str_0', '')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 419-22187233
+Original Utterance: None
+Original Snippet: """""".join([char for char in 'it is icy' if char != 'i'])
+
+Utterance: how to delete all instances of a character in a string in python ?
+Snippet: """""".join([char for char in 'it is icy' if char != 'i'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 420-13413590
+Original Utterance: Drop rows of pandas dataframe `df` having NaN in column at index "1"
+Original Snippet: df.dropna(subset=[1])
+
+Utterance: drop rows of pandas dataframe var_0 having nan in column at index str_0
+Snippet: var_0.dropna(subset=[1])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 421-598398
+Original Utterance: get elements from list `myList`, that have a field `n` value 30
+Original Snippet: [x for x in myList if x.n == 30]
+
+Utterance: get elements from list var_0 , that have a field var_1 value 30
+Snippet: [x for x in var_0 if x.var_1 == 30]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 422-10351772
+Original Utterance: converting list of strings `intstringlist` to list of integer `nums`
+Original Snippet: nums = [int(x) for x in intstringlist]
+
+Utterance: converting list of strings var_0 to list of integer var_1
+Snippet: var_1 = [int(x) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 423-10351772
+Original Utterance: convert list of string numbers into list of integers
+Original Snippet: map(int, eval(input('Enter the unfriendly numbers: ')))
+
+Utterance: convert list of string numbers into list of integers
+Snippet: map(int, eval(input('Enter the unfriendly numbers: ')))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 424-493386
+Original Utterance: print "." without newline
+Original Snippet: sys.stdout.write('.')
+
+Utterance: print str_0 without newline
+Snippet: sys.stdout.write('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 425-6569528
+Original Utterance: round off the float that is the product of `2.52 * 100` and convert it to an int
+Original Snippet: int(round(2.51 * 100))
+
+Utterance: round off the float that is the product of str_0 and convert it to an int
+Snippet: int(round(2.51 * 100))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 426-3964681
+Original Utterance: Find all files in directory "/mydir" with extension ".txt"
+Original Snippet: os.chdir('/mydir')
+for file in glob.glob('*.txt'):
+    pass
+
+Utterance: find all files in directory str_0 with extension str_1
+Snippet: os.chdir('str_0')
+for file in glob.glob('*.txt'):
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 427-3964681
+Original Utterance: Find all files in directory "/mydir" with extension ".txt"
+Original Snippet: for file in os.listdir('/mydir'):
+    if file.endswith('.txt'):
+        pass
+
+Utterance: find all files in directory str_0 with extension str_1
+Snippet: for file in os.listdir('str_0'):
+    if file.endswith('str_1'):
+        pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 428-3964681
+Original Utterance: Find all files in directory "/mydir" with extension ".txt"
+Original Snippet: for (root, dirs, files) in os.walk('/mydir'):
+    for file in files:
+        if file.endswith('.txt'):
+            pass
+
+Utterance: find all files in directory str_0 with extension str_1
+Snippet: for root, dirs, files in os.walk('str_0'):
+    for file in files:
+        if file.endswith('str_1'):
+            pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 429-20865487
+Original Utterance: plot dataframe `df` without a legend
+Original Snippet: df.plot(legend=False)
+
+Utterance: plot dataframe var_0 without a legend
+Snippet: var_0.plot(legend=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 430-13368659
+Original Utterance: loop through the IP address range "192.168.x.x"
+Original Snippet: for i in range(256):
+    for j in range(256):
+        ip = ('192.168.%d.%d' % (i, j))
+        print(ip)
+
+Utterance: loop through the ip address range str_0
+Snippet: for i in range(256):
+    for j in range(256):
+        ip = '192.168.%d.%d' % (i, j)
+        print(ip)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 431-13368659
+Original Utterance: loop through the IP address range "192.168.x.x"
+Original Snippet: for (i, j) in product(list(range(256)), list(range(256))):
+    pass
+
+Utterance: loop through the ip address range str_0
+Snippet: for i, j in product(list(range(256)), list(range(256))):
+    pass
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 432-13368659
+Original Utterance: loop through the IP address range "192.168.x.x"
+Original Snippet: generator = iter_iprange('192.168.1.1', '192.168.255.255', step=1)
+
+Utterance: loop through the ip address range str_0
+Snippet: generator = iter_iprange('192.168.1.1', '192.168.255.255', step=1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 433-4065737
+Original Utterance: Sum the corresponding decimal values for binary values of each boolean element in list `x`
+Original Snippet: sum(1 << i for i, b in enumerate(x) if b)
+
+Utterance: sum the corresponding decimal values for binary values of each boolean element in list var_0
+Snippet: sum(1 << i for i, b in enumerate(var_0) if b)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 434-8691311
+Original Utterance: write multiple strings `line1`, `line2` and `line3` in one line in a file `target`
+Original Snippet: target.write('%r\n%r\n%r\n' % (line1, line2, line3))
+
+Utterance: write multiple strings var_0 , var_1 and var_2 in one line in a file var_3
+Snippet: var_3.write('%r\n%r\n%r\n' % (var_0, var_1, var_2))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 435-10632111
+Original Utterance: Convert list of lists `data` into a flat list
+Original Snippet: [y for x in data for y in (x if isinstance(x, list) else [x])]
+
+Utterance: convert list of lists var_0 into a flat list
+Snippet: [y for x in var_0 for y in (x if isinstance(x, list) else [x])]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 436-15392730
+Original Utterance: Print new line character as `\n` in a string `foo\nbar`
+Original Snippet: print('foo\nbar'.encode('string_escape'))
+
+Utterance: print new line character as str_0 in a string str_1
+Snippet: print('str_1'.encode('string_escape'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 437-1010961
+Original Utterance: remove last comma character ',' in string `s`
+Original Snippet: """""".join(s.rsplit(',', 1))
+
+Utterance: remove last comma character str_0 in string var_0
+Snippet: """""".join(var_0.rsplit('str_0', 1))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 438-23855976
+Original Utterance: calculate the mean of each element in array `x` with the element previous to it
+Original Snippet: (x[1:] + x[:-1]) / 2
+
+Utterance: calculate the mean of each element in array var_0 with the element previous to it
+Snippet: (var_0[1:] + var_0[:-1]) / 2
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 439-23855976
+Original Utterance: get an array of the mean of each two consecutive values in numpy array `x`
+Original Snippet: x[:-1] + (x[1:] - x[:-1]) / 2
+
+Utterance: get an array of the mean of each two consecutive values in numpy array var_0
+Snippet: var_0[:-1] + (var_0[1:] - var_0[:-1]) / 2
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 440-6375343
+Original Utterance: load data containing `utf-8` from file `new.txt` into numpy array `arr`
+Original Snippet: arr = numpy.fromiter(codecs.open('new.txt', encoding='utf-8'), dtype='<U2')
+
+Utterance: load data containing str_0 from file str_1 into numpy array var_0
+Snippet: var_0 = numpy.fromiter(codecs.open('str_1', encoding='str_0'), dtype='<U2')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 441-1547733
+Original Utterance: reverse sort list of dicts `l` by value for key `time`
+Original Snippet: l = sorted(l, key=itemgetter('time'), reverse=True)
+
+Utterance: reverse sort list of dicts var_0 by value for key var_1
+Snippet: var_0 = sorted(var_0, key=itemgetter('var_1'), reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 442-1547733
+Original Utterance: Sort a list of dictionary `l` based on key `time` in descending order
+Original Snippet: l = sorted(l, key=lambda a: a['time'], reverse=True)
+
+Utterance: sort a list of dictionary var_0 based on key var_1 in descending order
+Snippet: var_0 = sorted(var_0, key=lambda a: a['var_1'], reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 443-37080612
+Original Utterance: get rows of dataframe `df` that match regex '(Hel|Just)'
+Original Snippet: df.loc[df[0].str.contains('(Hel|Just)')]
+
+Utterance: get rows of dataframe var_0 that match regex str_0
+Snippet: var_0.loc[var_0[0].str.contains('str_0')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 444-14716342
+Original Utterance: find the string in `your_string` between two special characters "[" and "]"
+Original Snippet: re.search('\\[(.*)\\]', your_string).group(1)
+
+Utterance: find the string in var_0 between two special characters str_0 and str_1
+Snippet: re.search('\\[(.*)\\]', var_0).group(1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 445-18684076
+Original Utterance: None
+Original Snippet: [d.strftime('%Y%m%d') for d in pandas.date_range('20130226', '20130302')]
+
+Utterance: how to create a list of date string in str_0 format with python pandas ?
+Snippet: [d.strftime('%Y%m%d') for d in pandas.date_range('20130226', '20130302')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 446-1666700
+Original Utterance: count number of times string 'brown' occurred in string 'The big brown fox is brown'
+Original Snippet: """The big brown fox is brown""".count('brown')
+
+Utterance: count number of times string str_0 occurred in string str_1
+Snippet: """str_1""".count('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 447-18979111
+Original Utterance: decode json string `request.body` to python dict
+Original Snippet: json.loads(request.body)
+
+Utterance: decode json string str_0 to python dict
+Snippet: json.loads(request.body)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 448-7243750
+Original Utterance: download the file from url `url` and save it under file `file_name`
+Original Snippet: urllib.request.urlretrieve(url, file_name)
+
+Utterance: download the file from url var_0 and save it under file var_1
+Snippet: urllib.request.urlretrieve(var_0, var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 449-743806
+Original Utterance: split string `text` by space
+Original Snippet: text.split()
+
+Utterance: split string var_0 by space
+Snippet: var_0.split()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 450-743806
+Original Utterance: split string `text` by ","
+Original Snippet: text.split(',')
+
+Utterance: split string var_0 by str_0
+Snippet: var_0.split('str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 451-743806
+Original Utterance: Split string `line` into a list by whitespace
+Original Snippet: line.split()
+
+Utterance: split string var_0 into a list by whitespace
+Snippet: var_0.split()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 452-35044115
+Original Utterance: replace dot characters  '.' associated with ascii letters in list `s` with space ' '
+Original Snippet: [re.sub('(?<!\\d)\\.(?!\\d)', ' ', i) for i in s]
+
+Utterance: replace dot characters str_0 associated with ascii letters in list var_0 with space str_1
+Snippet: [re.sub('(?<!\\d)\\.(?!\\d)', ' ', i) for i in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 453-38388799
+Original Utterance: sort list `list_of_strings` based on second index of each string `s`
+Original Snippet: sorted(list_of_strings, key=lambda s: s.split(',')[1])
+
+Utterance: sort list var_0 based on second index of each string var_1
+Snippet: sorted(var_0, key=lambda var_1: var_1.split(',')[1])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 454-9609375
+Original Utterance: call multiple bash function ‘vasp’ and ‘tee tee_output’ using ‘|’
+Original Snippet: subprocess.check_call('vasp | tee tee_output', shell=True)
+
+Utterance: call multiple bash function ‘ vasp ’ and ‘ tee tee_output ’ using ‘ | ’
+Snippet: subprocess.check_call('vasp | tee tee_output', shell=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 455-37004138
+Original Utterance: eliminate all strings from list `lst`
+Original Snippet: [element for element in lst if isinstance(element, int)]
+
+Utterance: eliminate all strings from list var_0
+Snippet: [element for element in var_0 if isinstance(element, int)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 456-37004138
+Original Utterance: get all the elements except strings from the list 'lst'.
+Original Snippet: [element for element in lst if not isinstance(element, str)]
+
+Utterance: get all the elements except strings from the list str_0 .
+Snippet: [element for element in str_0 if not isinstance(element, str)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 457-72899
+Original Utterance: Sort a list of dictionaries `list_to_be_sorted` by the value of the dictionary key `name`
+Original Snippet: newlist = sorted(list_to_be_sorted, key=lambda k: k['name'])
+
+Utterance: sort a list of dictionaries var_0 by the value of the dictionary key var_1
+Snippet: newlist = sorted(var_0, key=lambda k: k['var_1'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 458-72899
+Original Utterance: sort a list of dictionaries `l` by values in key `name` in descending order
+Original Snippet: newlist = sorted(l, key=itemgetter('name'), reverse=True)
+
+Utterance: sort a list of dictionaries var_0 by values in key var_1 in descending order
+Snippet: newlist = sorted(var_0, key=itemgetter('var_1'), reverse=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 459-72899
+Original Utterance: None
+Original Snippet: list_of_dicts.sort(key=operator.itemgetter('name'))
+
+Utterance: how do i sort a list of dictionaries by values of the dictionary in python ?
+Snippet: list_of_dicts.sort(key=operator.itemgetter('name'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 460-72899
+Original Utterance: None
+Original Snippet: list_of_dicts.sort(key=operator.itemgetter('age'))
+
+Utterance: how do i sort a list of dictionaries by values of the dictionary in python ?
+Snippet: list_of_dicts.sort(key=operator.itemgetter('age'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 461-36402748
+Original Utterance: None
+Original Snippet: df.groupby('prots').sum().sort('scores', ascending=False)
+
+Utterance: how to sort a dataframe by the ocurrences in a column in python ( pandas )
+Snippet: df.groupby('prots').sum().sort('scores', ascending=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 462-29881993
+Original Utterance: join together with "," elements inside a list indexed with 'category' within a dictionary `trans`
+Original Snippet: """,""".join(trans['category'])
+
+Utterance: join together with str_0 elements inside a list indexed with str_1 within a dictionary var_0
+Snippet: """str_0""".join(var_0['str_1'])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 463-34158494
+Original Utterance: concatenate array of strings `['A', 'B', 'C', 'D']` into a string
+Original Snippet: """""".join(['A', 'B', 'C', 'D'])
+
+Utterance: concatenate array of strings str_0 into a string
+Snippet: """""".join([str_0])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 464-7750557
+Original Utterance: get json data from restful service 'url'
+Original Snippet: json.load(urllib.request.urlopen('url'))
+
+Utterance: get json data from restful service str_0
+Snippet: json.load(urllib.request.urlopen('str_0'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 465-12666897
+Original Utterance: Remove all strings from a list a strings `sents` where the values starts with `@$\t` or `#`
+Original Snippet: [x for x in sents if not x.startswith('@$\t') and not x.startswith('#')]
+
+Utterance: remove all strings from a list a strings var_0 where the values starts with str_0 or str_1
+Snippet: [x for x in var_0 if not x.startswith('str_0') and not x.startswith('str_1')]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 466-2984751
+Original Utterance: django filter by hour
+Original Snippet: Entry.objects.filter(pub_date__contains='08:00')
+
+Utterance: django filter by hour
+Snippet: Entry.objects.filter(pub_date__contains='08:00')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 467-5944630
+Original Utterance: sort a list of dictionary `list` first by key `points` and then by `time`
+Original Snippet: list.sort(key=lambda item: (item['points'], item['time']))
+
+Utterance: sort a list of dictionary var_0 first by key var_1 and then by var_2
+Snippet: var_0.sort(key=lambda item: (item['var_1'], item['var_2']))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 468-7852855
+Original Utterance: convert datetime object `(1970, 1, 1)` to seconds
+Original Snippet: (t - datetime.datetime(1970, 1, 1)).total_seconds()
+
+Utterance: convert datetime object str_0 to seconds
+Snippet: (t - datetime.datetime(str_0)).total_seconds()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 469-2763750
+Original Utterance: insert `_suff` before the file extension in `long.file.name.jpg` or replace `_a` with `suff` if it precedes the extension.
+Original Snippet: re.sub('(\\_a)?\\.([^\\.]*)$', '_suff.\\2', 'long.file.name.jpg')
+
+Utterance: insert var_0 before the file extension in str_0 or replace var_1 with var_2 if it precedes the extension .
+Snippet: re.sub('(\\_a)?\\.([^\\.]*)$', '_suff.\\2', 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 470-6420361
+Original Utterance: reload a module `module`
+Original Snippet: import imp
+imp.reload(module)
+
+Utterance: reload a module var_0
+Snippet: import imp
+imp.reload(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 471-19546911
+Original Utterance: Convert integer `number` into an unassigned integer
+Original Snippet: struct.unpack('H', struct.pack('h', number))
+
+Utterance: convert integer var_0 into an unassigned integer
+Snippet: struct.unpack('H', struct.pack('h', var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 472-9746522
+Original Utterance: convert int values in list `numlist` to float
+Original Snippet: numlist = [float(x) for x in numlist]
+
+Utterance: convert int values in list var_0 to float
+Snippet: var_0 = [float(x) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 473-20107570
+Original Utterance: write dataframe `df`, excluding index, to a csv file
+Original Snippet: df.to_csv(filename, index=False)
+
+Utterance: write dataframe var_0 , excluding index , to a csv file
+Snippet: var_0.to_csv(filename, index=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 474-8740353
+Original Utterance: convert a urllib unquoted string `unescaped` to a json data `json_data`
+Original Snippet: json_data = json.loads(unescaped)
+
+Utterance: convert a urllib unquoted string var_0 to a json data var_1
+Snippet: var_1 = json.loads(var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 475-5891453
+Original Utterance: Create a list containing all ascii characters as its elements
+Original Snippet: [chr(i) for i in range(127)]
+
+Utterance: create a list containing all ascii characters as its elements
+Snippet: [chr(i) for i in range(127)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 476-18367007
+Original Utterance: write `newFileBytes` to a binary file `newFile`
+Original Snippet: newFile.write(struct.pack('5B', *newFileBytes))
+
+Utterance: write var_0 to a binary file var_1
+Snippet: var_1.write(struct.pack('5B', *var_0))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 477-21805490
+Original Utterance: python regex - check for a capital letter with a following lowercase in string `string`
+Original Snippet: re.sub('^[A-Z0-9]*(?![a-z])', '', string)
+
+Utterance: python regex - check for a capital letter with a following lowercase in string var_0
+Snippet: re.sub('^[A-Z0-9]*(?![a-z])', '', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 478-16125229
+Original Utterance: get the last key of dictionary `dict`
+Original Snippet: list(dict.keys())[-1]
+
+Utterance: get the last key of dictionary var_0
+Snippet: list(var_0.keys())[-1]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 479-6159900
+Original Utterance: write line "hi there" to file `f`
+Original Snippet: print('hi there', file=f)
+
+Utterance: write line str_0 to file var_0
+Snippet: print('str_0', file=var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 480-6159900
+Original Utterance: write line "hi there" to file `myfile`
+Original Snippet: f = open('myfile', 'w')
+f.write('hi there\n')
+f.close()
+
+Utterance: write line str_0 to file var_0
+Snippet: f = open('var_0', 'w')
+f.write('hi there\n')
+f.close()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 481-6159900
+Original Utterance: write line "Hello" to file `somefile.txt`
+Original Snippet: with open('somefile.txt', 'a') as the_file:
+    the_file.write('Hello\n')
+
+Utterance: write line str_0 to file str_1
+Snippet: with open('str_1', 'a') as the_file:
+    the_file.write('Hello\n')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 482-19527279
+Original Utterance: convert unicode string `s` to ascii
+Original Snippet: s.encode('iso-8859-15')
+
+Utterance: convert unicode string var_0 to ascii
+Snippet: var_0.encode('iso-8859-15')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 483-10668585
+Original Utterance: Django get maximum value associated with field 'added' in model `AuthorizedEmail`
+Original Snippet: AuthorizedEmail.objects.filter(group=group).order_by('-added')[0]
+
+Utterance: django get maximum value associated with field str_0 in model var_0
+Snippet: var_0.objects.filter(group=group).order_by('-added')[0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 484-356483
+Original Utterance: Find all numbers and dots from a string `text` using regex
+Original Snippet: re.findall('Test([0-9.]*[0-9]+)', text)
+
+Utterance: find all numbers and dots from a string var_0 using regex
+Snippet: re.findall('Test([0-9.]*[0-9]+)', var_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 485-356483
+Original Utterance: python regex  to find all numbers and dots from 'text'
+Original Snippet: re.findall('Test([\\d.]*\\d+)', text)
+
+Utterance: python regex to find all numbers and dots from str_0
+Snippet: re.findall('Test([\\d.]*\\d+)', str_0)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 486-38081866
+Original Utterance: execute script 'script.ps1' using 'powershell.exe' shell
+Original Snippet: os.system('powershell.exe', 'script.ps1')
+
+Utterance: execute script str_0 using str_1 shell
+Snippet: os.system('str_1', 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 487-7349646
+Original Utterance: Sort a list of tuples `b` by third item in the tuple
+Original Snippet: b.sort(key=lambda x: x[1][2])
+
+Utterance: sort a list of tuples var_0 by third item in the tuple
+Snippet: var_0.sort(key=lambda x: x[1][2])
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 488-2430539
+Original Utterance: get a list of all keys in Cassandra database `cf` with pycassa
+Original Snippet: list(cf.get_range().get_keys())
+
+Utterance: get a list of all keys in cassandra database var_0 with pycassa
+Snippet: list(var_0.get_range().get_keys())
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 489-10607688
+Original Utterance: create a datetime with the current date & time
+Original Snippet: datetime.datetime.now()
+
+Utterance: create a datetime with the current date & time
+Snippet: datetime.datetime.now()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 490-30843103
+Original Utterance: get the index of an integer `1` from a list `lst` if the list also contains boolean items
+Original Snippet: next(i for i, x in enumerate(lst) if not isinstance(x, bool) and x == 1)
+
+Utterance: get the index of an integer str_0 from a list var_0 if the list also contains boolean items
+Snippet: next(i for i, x in enumerate(var_0) if not isinstance(x, bool) and x == 1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 491-4918425
+Original Utterance: subtract 13 from every number in a list `a`
+Original Snippet: a[:] = [(x - 13) for x in a]
+
+Utterance: subtract 13 from every number in a list var_0
+Snippet: var_0[:] = [(x - 13) for x in var_0]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 492-701402
+Original Utterance: choose a random file from the directory contents of the C drive, `C:\\`
+Original Snippet: random.choice(os.listdir('C:\\'))
+
+Utterance: choose a random file from the directory contents of the c drive , str_0
+Snippet: random.choice(os.listdir('str_0'))
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 493-17794266
+Original Utterance: get the highest element in absolute value in a numpy matrix `x`
+Original Snippet: max(x.min(), x.max(), key=abs)
+
+Utterance: get the highest element in absolute value in a numpy matrix var_0
+Snippet: max(var_0.min(), var_0.max(), key=abs)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 494-30551576
+Original Utterance: Get all urls within text `s`
+Original Snippet: re.findall('"(http.*?)"', s, re.MULTILINE | re.DOTALL)
+
+Utterance: get all urls within text var_0
+Snippet: re.findall('"(http.*?)"', var_0, re.MULTILINE | re.DOTALL)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 495-30551576
+Original Utterance: match urls whose domain doesn't start with `t` from string `document` using regex
+Original Snippet: re.findall('http://[^t][^s"]+\\.html', document)
+
+Utterance: match urls whose domain does n't start with var_0 from string var_1 using regex
+Snippet: re.findall('http://[^t][^s"]+\\.html', var_1)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 496-113534
+Original Utterance: split a string `mystring` considering the spaces ' '
+Original Snippet: mystring.replace(' ', '! !').split('!')
+
+Utterance: split a string var_0 considering the spaces str_0
+Snippet: var_0.replace(' ', '! !').split('!')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 497-5838735
+Original Utterance: open file `path` with mode 'r'
+Original Snippet: open(path, 'r')
+
+Utterance: open file var_0 with mode str_0
+Snippet: open(var_0, 'str_0')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 498-36003967
+Original Utterance: sum elements at the same index in list `data`
+Original Snippet: [[sum(item) for item in zip(*items)] for items in zip(*data)]
+
+Utterance: sum elements at the same index in list var_0
+Snippet: [[sum(item) for item in zip(*items)] for items in zip(*var_0)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example: 499-7635237
+Original Utterance: add a new axis to array `a`
+Original Snippet: a[:, (np.newaxis)]
+
+Utterance: add a new axis to array var_0
+Snippet: var_0[:, (np.newaxis)]
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
